@@ -1,0 +1,1430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords">
+<meta name="description" content="Unlimited online developer training, creative and IT courses authored by industry experts. Learn the most in-demand tech skills from our extensive library.">
+<meta property="og:description" content="Unlimited online developer training, creative and IT courses authored by industry experts. Learn the most in-demand tech skills from our extensive library.">
+<meta name="twitter:description" content="Unlimited online developer training, creative and IT courses authored by industry experts. Learn the most in-demand tech skills from our extensive library.">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@pluralsight"/>
+<meta property="og:image" content="https://www.pluralsight.com/content/dam/pluralsight/images/heroes_backgrounds/dark/PLSGHT%20WEB%20PHOTO%20126%20dark.jpg"/>
+<meta name="twitter:image" content="https://www.pluralsight.com/content/dam/pluralsight/images/heroes_backgrounds/dark/PLSGHT%20WEB%20PHOTO%20126%20dark.jpg"/>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.pluralsight.com"/>
+<script src="/etc/clientlibs/pluralsight/main/js/jquery-3.2.1.min.js.pagespeed.jm.Y8jX7FH_5H.js"></script>
+<style>@font-face{font-family:'FontAwesome';src:url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.eot);src:url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.eot) format('embedded-opentype') , url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.woff2) format('woff2') , url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.woff) format('woff') , url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.ttf) format('truetype') , url(etc/clientlibs/pluralsight/main/fonts/fontawesome-webfont.svg) format('svg');font-weight:normal;font-style:normal}@font-face{font-family:"Gotham A","Gotham B",sans-serif;font-weight:normal;font-style:normal}html{box-sizing:border-box}*,*:before,*:after{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}html,body{font-size:100%}body{background:#fff;color:#222;cursor:auto;font-family:"Gotham SSm A","Gotham SSm B","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-style:normal;font-weight:normal;line-height:1.5;margin:0;padding:0;position:relative}a:hover{cursor:pointer}img{max-width:100%;height:auto}img{-ms-interpolation-mode:bicubic}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{display:inline-block;vertical-align:middle}textarea{height:auto;min-height:50px}select{width:100%}.row{margin:0 auto;max-width:62.5rem;width:100%}.row:before,.row:after{content:" ";display:table}.row:after{clear:both}.row .row{margin:0 -.9375rem;max-width:none;width:auto}.row .row:before,.row .row:after{content:" ";display:table}.row .row:after{clear:both}.columns{padding-left:.9375rem;padding-right:.9375rem;width:100%;float:left}.columns+.columns:last-child{float:right}@media only screen{.columns{position:relative;padding-left:.9375rem;padding-right:.9375rem;float:left}}@media only screen and (min-width:40.0625em){.columns{position:relative;padding-left:.9375rem;padding-right:.9375rem;float:left}.medium-12{width:100%}}@media only screen and (min-width:64.0625em){.columns{position:relative;padding-left:.9375rem;padding-right:.9375rem;float:left}.large-3{width:25%}.large-4{width:33.33333%}.large-8{width:66.66667%}}form{margin:0 0 1rem}label{color:#4d4d4d;cursor:pointer;display:block;font-size:.875rem;font-weight:normal;line-height:1.5;margin-bottom:0}input[type="text"],input[type="email"],input[type="number"],input[type="tel"],textarea{-webkit-appearance:none;-moz-appearance:none;border-radius:0;background-color:#fff;border-style:solid;border-width:1px;border-color:#ccc;box-shadow:inset 0 1px 2px rgba(0,0,0,.1);color:rgba(0,0,0,.75);display:block;font-family:inherit;font-size:.875rem;height:2.3125rem;margin:0 0 1rem 0;padding:.5rem;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:border-color .15s linear , background .15s linear;-moz-transition:border-color .15s linear , background .15s linear;-ms-transition:border-color .15s linear , background .15s linear;-o-transition:border-color .15s linear , background .15s linear;transition:border-color .15s linear , background .15s linear}input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="tel"]:focus,textarea:focus{background:#fafafa;border-color:#999;outline:0}input[type="text"]:disabled,input[type="email"]:disabled,input[type="number"]:disabled,input[type="tel"]:disabled,textarea:disabled{background-color:#ddd;cursor:default}input[type="text"][disabled]{background-color:#ddd;cursor:default}textarea[rows]{height:auto}textarea{max-width:100%}::-webkit-input-placeholder{color:#ccc}:-moz-placeholder{color:#ccc}::-moz-placeholder{color:#ccc}:-ms-input-placeholder{color:#ccc}select{-webkit-appearance:none!important;-moz-appearance:none!important;background-color:#fafafa;border-radius:0;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);background-position:100% center;background-repeat:no-repeat;border-style:solid;border-width:1px;border-color:#ccc;color:rgba(0,0,0,.75);font-family:inherit;font-size:.875rem;line-height:normal;padding:.5rem;border-radius:0;height:2.3125rem}select::-ms-expand{display:none}select:hover{background-color:#f3f3f3;border-color:#999}select:disabled{background-color:#ddd;cursor:default}input[type="radio"],select{margin:0 0 1rem 0}input[type="radio"]+label{display:inline-block;margin-left:.5rem;margin-right:1rem;margin-bottom:0;vertical-align:baseline}fieldset{border:1px solid #ddd;margin:1.125rem 0;padding:1.25rem}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0);transform:rotate(0)}
+to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@keyframes rotate{from{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
+to{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+}table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f9f9f9}.fixed.expanded:not(.top-bar){height:auto;max-height:100%;overflow-y:auto;width:100%}.fixed.expanded:not(.top-bar) .title-area{position:fixed;width:100%;z-index:99}.fixed.expanded:not(.top-bar) .top-bar-section{margin-top:2.8125rem;z-index:98}div,ul,li,h2,h3,form{margin:0;padding:0}a{color:#008cba;line-height:inherit;text-decoration:none}a img{border:0}h2,h3{font-family:"Gotham SSm A","Gotham SSm B","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-style:normal;font-weight:normal;line-height:1.4;margin-bottom:.5rem;margin-top:.2rem;text-rendering:optimizeLegibility}h2{font-size:1.6875rem}h3{font-size:1.375rem}ul{font-family:inherit;font-size:1rem;line-height:1.6;list-style-position:outside;margin-bottom:1.25rem}ul{margin-left:1.1rem}ul li ul{margin-left:1.25rem;margin-bottom:0}@media only screen and (min-width:40.0625em){h2,h3{line-height:1.4}h2{font-size:2.3125rem}h3{font-size:1.6875rem}}@media print{@page{margin:.5cm}}@media only screen and (min-width:40.0625em){.section-tools .tools>li:nth-of-type(1n){clear:none}.section-tools .tools>li:nth-of-type(3n+1){clear:both}.section-pricing .plans>li:nth-of-type(1n){clear:none}.section-pricing .plans>li:nth-of-type(4n+1){clear:both}}body{font-family:"Gotham SSm A","Gotham SSm B",sans-serif;font-size:.875em}h2,h3,html{letter-spacing:normal;font-weight:300}a{color:#f15b2a}a.button{font-family:"Gotham SSm A","Gotham SSm B",sans-serif}a:hover{color:#f15b2a;text-decoration:underline}a.button:hover{text-decoration:inherit}ul{list-style:none}ul li{font-size:14px;font-weight:300;line-height:1.5em;padding-left:9px;margin-bottom:16px}ul li{list-style:none}ul li:before{display:block;position:absolute;font-family:FontAwesome;font-size:5px;content:"\f111";vertical-align:middle;margin:0;margin-left:-16px}@keyframes littleWiggle{0{transform:rotate(0)}
+25%{transform:rotate(3deg)}
+75%{transform:rotate(-3deg)}
+100%{transform:rotate(0)}
+}@keyframes bigWiggle{0{-webkit-transform:rotate(0)}
+20%{-webkit-transform:rotate(-3deg)}
+35%{-webkit-transform:rotate(3deg)}
+70%{-webkit-transform:rotate(-3deg)}
+85%{-webkit-transform:rotate(3deg)}
+100%{-webkit-transform:rotate(0)}
+}@-webkit-keyframes fa-spin{0{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
+}@keyframes fa-spin{0{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
+}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}@charset "UTF-8";@media only screen and (min-width:75em){p}
+.ps--blog_hero{height:414px;position:relative}@media only screen and (min-width:37.5em){.ps--blog_hero_content{position:absolute;top:199px;left:20px;right:20px;text-align:left;transform:none}
+.ps--blog_hero_subhead{margin-bottom:24px;margin-left:1px;padding:0;padding-right:80px}
+}@media only screen and (min-width:75em){.ps--blog_hero_content{left:235px;right:0;top:199px}
+.ps--blog_hero_headline{font-size:48px;line-height:48px}
+.ps--blog_hero_subhead{font-size:24px;line-height:24px}
+}@media only screen and (min-width:37.5em){.ps--blog_body{margin-left:240px}
+}@media only screen and (min-width:75em){.ps--blog_body{margin-left:240px}
+}@media only screen and (min-width:75em){.ps--blog--post{margin-left:0;padding-top:40px;padding-left:360px}
+}@media only screen and (min-width:37.5em){.ps--blog_body time{float:left;margin-right:25px;padding:2.0rem 0;width:100px}
+.ps--blog_body .ps--blog_content{border-top:solid 1px #e6e6e6;padding:2.0rem 0 3.0rem 0}
+}@media only screen and (min-width:75em){.ps--blog_article_headline{font-size:48px;line-height:48px}
+.ps--blog_article_subhead{font-size:18px;line-height:18px}
+}.clear{clear:both;display:block;height:0;overflow:hidden;visibility:hidden;width:0}.clear:before,.clear:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clear:after{clear:both}@media screen and (max-width:1024px){#search-filter-left{display:none !important}
+#search-content-right{margin:0 auto}
+}@media screen and (max-width:640px){.search-template #content,.search-template #content{padding:10px 0 0}
+#search-content-right{padding:0}
+#search-field-wrapper{padding:0 40px}
+#search-field{margin:20px 0 0;height:28px}
+#search-field button{padding:3px 13px;float:right}
+#search-field button::before{font-size:12px}
+#search-field-input-container{margin-right:38px;margin-left:0}
+#search-field input{font-size:14px;padding-left:15px}
+#search-results-section{margin-top:8px}
+}.resource-training .generic-block.section:nth-child(3) .generic-block-wrapper,.resource-white-paper-template .generic-block.section:nth-child(3) .generic-block-wrapper{padding:80px 0}@media screen and (max-width:1024px){.resource-recorded-webinar .columns[class*="-6"]{padding:0 15px}
+.resource-recorded-webinar .generic-block.section:last-child .columns[class*="-6"]:first-child{padding-left:15px}
+.resource-recorded-webinar .generic-block.section:last-child .columns[class*="-6"]:last-child{padding-right:15px}
+.resource-recorded-webinar .mktoForm{margin-top:40px}
+}@media screen and (max-width:640px){.resource-training .generic-block.section:nth-child(3) .generic-block-wrapper,.resource-white-paper-template .generic-block.section:nth-child(3) .generic-block-wrapper{padding:40px 0}
+}@media all and (max-width:360px){.resource-white-paper-template .marketo-form-component,.resource-recorded-webinar .marketo-form-component,.resource-center-video .marketo-form-component{margin:0}
+}.privacy-policy #content>div>div.column-control.section>div>div>div>div.large-4.columns>div:nth-child(2){padding-top:80px;padding-bottom:10px}@media screen and (max-width:640px){.press-release-landing{text-align:center}
+.press-release-landing .generic-block.section .generic-block-wrapper{min-height:120px;padding:70px 0 25px}
+.press-release-landing h1{font-size:24px;padding:59px 0 31px}
+.press-release-landing h4{font-size:18px;text-align:center;padding-top:60px;margin-top:55px;border-top:1px solid #ccc}
+}@media screen and (max-width:640px){.press-release-template{text-align:center}
+.press-release-template .generic-block.section .generic-block-wrapper{min-height:120px;padding:70px 0 25px}
+.press-release-template h1{font-size:24px;padding:59px 0 31px}
+.press-release-template .columns[class*="-4"]{padding-bottom:60px;margin-bottom:60px;border-bottom:1px solid #ccc}
+.press-release-template h3{font-size:24px;line-height:30px;margin:30px 0}
+.press-release-template .publish-date-component{font-size:11px}
+.press-release-template .columns[class*="-8"]{padding:0}
+.press-release-template .columns[class*="-8"] .parsys.section{padding:0 .9375rem}
+.press-release-template .columns[class*="-8"] p{text-align:left}
+}@media only screen and (max-width:641px){.learning-paths-page .paths-header{text-align:center}
+}@media only screen and (max-width:1300px){.learning-paths-page .paths-header img.course-image{margin-left:-66px;max-width:70px}
+}@media only screen and (max-width:641px){.learning-paths-page .paths-header img.course-image{margin-left:0;margin-bottom:15px;max-width:80px}
+}@media only screen and (max-width:641px){.learning-paths-page .paths-header h1{font-size:24px;line-height:26px;margin-bottom:4px}
+}@media only screen and (max-width:641px){.learning-paths-page .paths-header p.authors,.learning-paths-page .paths-header p.authors a{font-size:11px;line-height:14px}
+}@media only screen and (max-width:1024px){.learning-paths-page .paths-header .related-col{padding-left:.9375rem}
+}@media only screen and (max-width:641px){.learning-paths-page .paths-header .related-col{padding-left:0}
+}@media only screen and (max-width:1024px){.learning-paths-page .paths-header .related-col .related-h{margin-top:0}
+}@media only screen and (max-width:1300px) and (min-width:641px){.learning-paths-page .paths-header .row{max-width:2000px;padding-left:80px;padding-right:80px}
+}@media only screen and (max-width:641px){.learning-paths-page #paths-gutter{padding-left:0;padding-right:0}
+}@media only screen and (max-width:1300px){.learning-paths-page #ps_skill{margin-top:50px;width:700px}
+}@media only screen and (max-width:900px){.learning-paths-page #ps_skill{width:100%}
+}@keyframes ps_skill--animation{from{opacity:0}
+to{opacity:1}
+}@media only screen and (max-width:400px){.learning-paths-page #ps_skill .ps_skill--image{margin-bottom:10px}
+}@media only screen and (max-width:400px){.learning-paths-page #ps_skill .ps_skill--headline{margin-bottom:10px;font-size:14px}
+}@media only screen and (max-width:1024px){.learning-paths-page .path-course-block{width:220px}
+}@media only screen and (max-width:640px){.learning-paths-page .path-course-block{width:96%;margin-left:2%;margin-bottom:0}
+}@media only screen and (max-width:1024px){.learning-paths-page .path-course-block .course-top{height:100px}
+}@media only screen and (max-width:640px){.learning-paths-page .path-course-block .course-top{background-image:none !important;background-color:#222 !important;border-bottom:0;height:40px;padding:10px 15px 0}
+.learning-paths-page .path-course-block .course-top h4{font-size:18px}
+}@media only screen and (max-width:640px){.learning-paths-page .path-course-block .course-bottom .mobile-course-info{display:inline;font-size:11px;font-weight:500;margin:0}
+.learning-paths-page .path-course-block .course-bottom .course-author,.learning-paths-page .path-course-block .course-bottom .course-date-time,.learning-paths-page .path-course-block .course-bottom .mobile-course-info{color:#858585}
+}@media only screen and (max-width:640px){.learning-paths-page .path-course-block .course-content{position:static;margin-right:0;margin-left:0;width:auto;padding:20px 0}
+}@media only screen and (max-width:1024px){.learning-paths-page .hide-on-tablet{display:none !important}
+}@media only screen and (max-width:640px){.learning-paths-page .hide-on-mobile{display:none !important}
+}@media screen and (max-width:640px){#content-error .title.section,#content-error .text.section,#content-error .mini-search-box.section{width:90%;float:none;margin:3% auto;text-align:center}
+}}#browse-course-listing-component #path-list-target .item:nth-child(n+7){display:none}.blog-template #content .generic-block:nth-last-child(3) .generic-block-wrapper{padding:0;min-height:180px}.ps_btn{background:#f15b2a;border:solid 1px #f15b2a;color:#fff;cursor:pointer;display:inline-block;font-size:.875rem;font-weight:500;line-height:2.375rem;letter-spacing:0;min-width:140px;padding:0 1.0rem;position:relative;text-align:center;text-decoration:none;text-rendering:optimizeLegibility;white-space:nowrap;word-wrap:normal;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}.ps_btn.stroke{background:transparent;color:#f15b2a}.ps_btn.stroke:hover{border:solid 1px #f15b2a;color:#f15b2a}.ps_btn:focus{outline:0}.ps_btn:hover{color:#fff;text-decoration:none}.live_speakers:not(.active){max-width:325px}// edit-mode hack to have edit container wrap component .speaker.cq-Editable-dom{overflow:hidden}.ps_card{box-sizing:border-box;display:block;float:left;width:100%}.ps_card a,.ps_card a:hover{text-decoration:none}.ps_card--container{background:#fff;border:0}.ps_card--body-wrapper{position:relative;height:160px}.ps_card--body{width:100%;box-sizing:border-box;color:#aaa;font-weight:700;padding:20px 10px;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}.ps_card--content{position:absolute;top:50%;transform:translateY(-50%);width:100%}.ps_card--headlines{min-height:59px;position:relative}.ps_card--foot{border-top:solid 1px #ddd;box-sizing:border-box;display:table;height:40px;width:100%}.ps_card--foot a{color:#222;border-right:solid 1px #ddd;box-sizing:border-box;display:table-cell;font-size:11px;font-weight:700;line-height:34px;overflow:hidden;padding:4px 10px 0 10px;text-align:center;text-transform:uppercase;transition:background .3s ease;vertical-align:middle}@keyframes ripple{100%{opacity:0;transform:scale(2.5)}
+}.ps_card--foot a:hover{background:#fff}.ps_card--foot a:last-child{border-right:0}.ps_card--image{background-repeat:no-repeat;background-position:50% 50%;background-size:100%;position:relative;width:100%}.ps_card--image:before{content:"";display:block;padding-top:62.5%}.ps_card--main{display:block}.ps_card--subtitle{color:#555;font-size:14px;font-weight:400;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}.ps_card--title{color:#222;font-size:16px;line-height:18px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}.ps_card--type{font-size:10px;line-height:18px;text-transform:uppercase;margin-bottom:10px}.press-release-row:nth-child(n+26){display:none}.news-row:nth-child(n+26){display:none}.header .pluralsight.horizontal--logo{position:relative;height:3.75rem;background-image:url(etc/clientlibs/pluralsight/main/images/global/header/xPS_logo_sm.png.pagespeed.ic.Y5UAv3m2VG.png);background-repeat:no-repeat;background-position:6px 13px;background-size:auto 70%}@media only screen and (min-width:1025px){.header .pluralsight.horizontal--logo{height:5.2rem;margin:0;background-image:url(etc/clientlibs/pluralsight/main/images/global/header/xPS_logo.png.pagespeed.ic.OKnMNI5y9l.png);background-size:80% auto;background-position:center center}}@media only screen and (max-width:1024px) and (min-width:768px){.header .pluralsight.horizontal--logo{position:relative;height:3.75rem;width:3.25rem;background-image:url(etc/clientlibs/pluralsight/main/images/global/header/xPS_logo_sm.png.pagespeed.ic.Y5UAv3m2VG.png);background-repeat:no-repeat;background-position:6px 13px;background-size:auto 70%}}.header .pluralsight.horizontal--logo:before{display:block;content:"";width:100%;padding-top:33.33332%}.header{background:rgba(33,33,33,.9);display:block;height:70px;left:0;position:fixed;right:0;top:0;z-index:99999}.header .pluralsight{float:left;position:relative;width:3.5rem;z-index:999}@media only screen and (min-width:1025px){.header{height:85px}.header .pluralsight{width:15.00rem}}@media only screen and (max-width:1024px) and (min-width:768px){.header{height:70px}}.header .header_browse{left:0;position:absolute;padding:0 3.5rem;right:0}@media only screen and (min-width:1025px){.header .header_browse{padding:0 15rem}}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_browse{padding:0 3.5rem}}.header .header_browse .header_dropdown{background:rgba(24,24,24,.8);display:block;position:fixed;top:85px;left:0;right:0;bottom:0;z-index:99999}.header .header_browse .header_dropdown a:hover{color:#fff;text-decoration:none}@media only screen and (max-width:1024px){.header .header_browse .header_dropdown{top:70px}}.header .header_browse .header_nav_courses{width:120px;opacity:1;color:#fff}.header .header_browse .header_nav_courses,.header .header_browse .header_nav_submenus{display:none}.header .header_browse .header_nav_courses .header_nav_primary:hover{opacity:.5}.header .header_browse .header_nav_submenus:hover .header_nav_secondary{opacity:.5}@media only screen and (min-width:1025px){.header .header_browse .header_nav--menu{display:block;float:left;padding:23px 10px 22px 0}}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_browse .header_nav--menu{display:block;float:left;padding:15px 10px 15px 0}.header .header_browse .header_nav_search{width:72%}.header .header_browse .header_nav_submenus{display:none}}.header .header_browse .header_nav_primary{color:#fff;background-color:#1a1a1a;border-radius:5px;border:1px solid #555;display:block;font-weight:300;line-height:1.50rem;letter-spacing:0;padding:.5845em 1em;text-transform:uppercase;font-size:12px;text-align:center;text-decoration:none;transition:opacity .3s ease}.header .header_browse .header_nav_primary:hover,.header .header_browse .header_nav_secondary:hover{opacity:1;text-decoration:none}.header .header_browse .header_nav_secondary{color:#fff;font-size:.875rem;font-weight:400;text-align:left;padding:.5945rem 1.5em;text-decoration:none;transition:opacity .3s ease;display:block}.header .header_browse .header_nav_primary .icons{display:inline-block;height:6px;position:relative;transform:rotate(45deg);border:solid #fff;border-width:0 2px 2px 0;padding:4px;float:right;top:4px;transition:all .3s ease}@media only screen and (min-width:1025px){.header .header_browse .header_nav_primary{font-size:.75rem;font-weight:400;line-height:1.50rem;text-align:left}}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_browse .header_nav_secondary{padding-left:.15rem;padding-right:.15rem}}.header .header_nav{background:#fff;position:fixed;top:4.4rem;left:0;right:0;bottom:0;padding:0 1.0rem;opacity:0;visibility:hidden;transition:opacity .3s ease;transition-property:visibility , opacity;box-sizing:border-box}.header .header_nav ul{display:block;margin:0;padding:0;width:100%;table-layout:fixed}@media only screen and (min-width:1025px){.header .header_nav ul{display:table}}.header .header_nav ul li{margin:0;box-sizing:border-box}.header .header_nav ul li:before{content:""}@media only screen and (min-width:1025px){.header .header_nav ul li{float:left;display:block}}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_nav{padding:0}}.header .header_nav ul li ul{bottom:0;left:0;overflow:scroll;overflow-y:scroll;padding:0 20px;position:absolute;right:0;top:0;box-sizing:border-box;-webkit-overflow-scrolling:touch}.header .header_nav ul li ul li{margin:0 -20px 0;padding:0}.header .header_nav ul li ul li a{color:#555;display:block;font-size:1.00rem;font-weight:300;line-height:1.50rem;opacity:0;padding:1rem 0;margin-left:1.5rem;margin-right:1.5rem;border-bottom:1px solid #e2e2e2;text-decoration:none;transform:scale(1.1) translateY(-24px);-webkit-transition:opacity .35s ease-out , -webkit-transform .35s ease-out;transition:opacity .35s ease-out , -webkit-transform .35s ease-out;transition:opacity .35s ease-out , transform .35s ease-out;transition:opacity .35s ease-out , transform .35s ease-out , -webkit-transform .35s ease-out}.header .header_nav ul li ul li a:hover{color:#f15b2a}.header .header_nav ul li ul li.mobile-signin{background:#f1f1f1}.header .header_nav ul li ul li.mobile-breaker{text-transform:uppercase;font-size:12px;font-weight:500;background:#f1f1f1;padding:.5rem 1.5rem}.header .header_nav ul li ul li:nth-child(15) a{transition-delay:750ms , 750ms}.header .header_nav ul li ul li:nth-child(14) a{transition-delay:750ms , 750ms}.header .header_nav ul li ul li:nth-child(13) a{transition-delay:700ms , 700ms}.header .header_nav ul li ul li:nth-child(12) a{transition-delay:650ms , 650ms}.header .header_nav ul li ul li:nth-child(11) a{transition-delay:600ms , 600ms}.header .header_nav ul li ul li:nth-child(10) a{transition-delay:550ms , 550ms}.header .header_nav ul li ul li:nth-child(9) a{transition-delay:500ms , 500ms}.header .header_nav ul li ul li:nth-child(8) a{transition-delay:450ms , 450ms}.header .header_nav ul li ul li:nth-child(7){transition-delay:400ms , 400ms}.header .header_nav ul li ul li:nth-child(6) a{transition-delay:350ms , 350ms}.header .header_nav ul li ul li:nth-child(5) a{transition-delay:300ms , 300ms;border-bottom-color:transparent}.header .header_nav ul li ul li:nth-child(4) a{transition-delay:250ms , 250ms}.header .header_nav ul li ul li:nth-child(3) a{transition-delay:200ms , 200ms}.header .header_nav ul li ul li:nth-child(2) a{transition-delay:150ms , 150ms;border-bottom-color:transparent}.header .header_nav ul li ul li:nth-child(1) a{transition-delay:100ms , 100ms}.header .header_nav ul li ul li:last-child a{border:0}.header .header_nav ul li.mobile-only{display:inherit}@media only screen and (min-width:1025px){.header .header_nav ul li.mobile-only{display:none}}.header .container-lg{position:relative;margin:0 15rem;box-sizing:border-box;background:#fff;display:flex}@media only screen and (max-width:1740px){.header .container-lg{margin:0 15% 0 15%}}@media only screen and (max-width:1024px) and (min-width:768px){.header .container-lg{margin:0 3.5rem}}.header .header_search{padding:15px 0;box-sizing:border-box}.header .header_search input[type="text"]{background-color:transparent;background-image:url(etc/clientlibs/pluralsight/main/images/search.svg);background-size:32px 32px;background-repeat:no-repeat;background-position:3px 7px;border:solid 1px #555;color:#fff;font-family:inherit;font-size:.875rem;font-style:normal;font-weight:300;padding:.5845em 1em .5845em 2.5em;margin:0;position:relative;width:100%;height:40px;border-radius:5px;box-sizing:border-box;background-clip:padding-box;appearance:none;transition:all .3s ease}.header .header_search input[type="text"]:focus{outline:0}.header .header_search input[type="text"]::placeholder{color:#fff}@media only screen and (min-width:1025px){.header .header_search input[type="text"]{font-size:.875rem}}.header .header_search input[type="text"].search-menu__search-term--shadow{color:#888;background-color:#1a1a1a;position:absolute;top:0;left:0;right:0;z-index:-1}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_search{padding:0;width:100%;min-width:300px}}.header .header_search .header_search--form{position:relative}.header .header_utilities{display:none;float:right;padding:26px 1.0rem 22px;position:relative;z-index:999}.header .header_utilities .btn-xs.flat{padding:0}@media only screen and (min-width:1025px){.header .header_utilities{display:block}}@media only screen and (max-width:1024px) and (min-width:768px){.header .header_utilities{padding:1.1rem 1.0rem}}.header #header_tabs,.header #header_tabs--search{max-width:1024px;max-height:75vh}.header #header_tabs .closebutton,.header #header_tabs--search .closebutton{position:absolute;color:#000;font-size:18px;padding:5px 10px;right:15px;font-weight:200;top:10px;cursor:pointer;z-index:999}.header #header_tabs ul{min-width:30%;padding:1em 0 1em 1em;background:#f1f1f1;margin:0}.header #header_tabs ul li{margin-bottom:8px}.header #header_tabs ul li:before{display:none}.header #header_tabs ul .header_roles{border-left:solid 4px transparent;padding:0;transition:all .3s ease}.header #header_tabs ul .header_roles.active{background:#fff}.header #header_tabs ul .header_roles.active.software-development{border-left-color:#1e9dbd}.header #header_tabs ul .header_roles a{color:#000;font-size:14px;font-weight:500;text-decoration:none;display:block;padding:.75rem}.header #header_tabs ul .header_roles:hover{background:#fff}.header #header_tabs .header_tabs_content{display:none;width:100%}.header #header_tabs .header_tabs_content.active{display:inherit}.header #header_tabs .header_tabs_content--container,.header #header_tabs--search .header_tabs_content--container{display:flex;flex-wrap:wrap;width:100%;max-height:85vh;overflow-y:scroll;-webkit-overflow-scrolling:touch}@media only screen and (max-width:1024px) and (min-width:768px){.header #header_tabs .header_tabs_content--container,.header #header_tabs--search .header_tabs_content--container{display:block}}.header #header_tabs .header_tabs_column,.header #header_tabs--search .header_tabs_column{flex:0 0 50%}.header #header_tabs .header_tabs_column.full-column{flex:0 0 100%}.header #header_tabs .header_tabs_column.full-column ul{padding:1.75rem}.header #header_tabs .header_tabs_column.full-column ul li{display:inline-block;margin-left:7px;margin-bottom:10px}.header #header_tabs .header_tabs_column.full-column ul li a{padding:10px;background:#f1f1f1}.header #header_tabs .header_tabs_column.full-column ul li.first{display:block;padding:0}.header #header_tabs .header_tabs_column ul{background:transparent;min-width:inherit;padding:1.75rem 1.75rem 0}@media only screen and (max-width:1024px) and (min-width:768px){.header #header_tabs .header_tabs_column ul{padding:1.75em 1.75em 0}}.header #header_tabs .header_tabs_column ul li{padding-left:0;margin-bottom:0}.header #header_tabs .header_tabs_column ul li a{color:#777;padding:.75rem;display:block}.header #header_tabs .header_tabs_column ul li a:hover{color:#000}.header #header_tabs .header_tabs_column ul li.first{color:#000;text-transform:uppercase;font-weight:500;font-size:.75rem;margin-bottom:15px;padding:0 .75rem}.header #header_tabs .header_tabs_column ul li.last{margin:15px .75rem 0;font-weight:500;font-size:.75rem}.header #header_tabs .header_tabs_column ul li.last a{color:#000;background:#f1f1f1;padding:5px 10px}.header #header_tabs .header_tabs_column.paths ul li{margin-bottom:5px}.header #header_tabs .header_tabs_column.paths ul li a{padding-top:0;padding-bottom:0}.header #header_tabs .header_tabs_column.paths ul li a:hover{background:0}.header #header_tabs .header_tabs_column.paths ul li.first{margin-bottom:30px}.header #header_tabs .header_tabs_column.paths ul li.last{margin-top:0;margin-bottom:20px}.header #header_tabs .header_tabs_column.paths ul li.last a{padding:5px 10px}.header #header_tabs .header_tabs_column.paths ul li.last a:hover{background:#f1f1f1}.header #header_tabs .header_tabs_column.paths .item .item-each{background-color:#f1f1f1;width:100%;position:relative;padding:.85em .25em .45em 60px}.header #header_tabs .header_tabs_column.paths .item .item-image{height:60px;width:60px;position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.header #header_tabs .header_tabs_column.paths .item .item-text{color:#000;font-weight:500;line-height:1.2}.header #header_tabs .header_tabs_column.paths .item .item-text>ul{padding:0}.header #header_tabs .header_tabs_column.paths .item .item-text>ul li{text-transform:none;color:#777;font-weight:200;font-size:12px;display:inline-block;margin-bottom:0;padding-left:0;padding-right:20px}.header #header_tabs .header_tabs_column.paths .item .item-text>ul li>span{color:#000;font-weight:500}.header #header_tabs--search.container-lg{margin:0 1rem 0 22.5rem;max-width:1024px}@media only screen and (max-width:1740px){.header #header_tabs--search.container-lg{margin:0 20% 0 20%}}@media only screen and (max-width:1024px) and (min-width:768px){.header #header_tabs--search.container-lg{margin:0 11.2rem}}@media only screen and (max-width:767px){.header #header_tabs--search.container-lg{margin:0 3.5rem}}@media only screen and (max-width:425px){.header #header_tabs--search.container-lg{margin:0}}.header .btn-xs.flat{background:transparent;border:solid 1px transparent;color:#fff}.header .btn-xs.flat:hover{background:transparent;border:solid 1px transparent;color:#fff}.header .btn-xs{background:#f15b2a;border:solid 1px #f15b2a;color:#fff;cursor:pointer;display:inline-block;font-size:.875rem;font-weight:500;line-height:1.875rem;margin-left:1.0rem;padding:0 1.5rem;position:relative;text-align:center;text-decoration:none;white-space:nowrap;appearance:none;transition:background 300ms ease-out;border-radius:2px;box-sizing:border-box;transition:transform 100ms ease-in-out!important}.header .btn-xs:hover{background:#fd7346;border:solid 1px #fd7346}.header .header_menu{color:#fff;cursor:pointer;display:block;height:40px;right:8px;top:14px;margin:0 auto;position:relative;float:right;width:40px;background:#1a1a1a;border-radius:5px;border:solid 1px #555;-webkit-tap-highlight-color:rgba(0,0,0,0)}@media only screen and (min-width:1025px){.header .header_menu{display:none}}.header .header_menu_line{background:#aaa;height:1px;position:absolute;top:19px;left:50%;margin-left:-11px;width:22px;transition:transform .1s ease-in-out , top .1s .1s ease-in-out , opacity .1s .2s ease-in-out}.header .header_menu_line:first-of-type{top:13px}.header .header_menu_line:last-of-type{top:25px}.header_padding{height:70px;width:100%;display:block;background-color:#000}@media only screen and (min-width:1025px){.header_padding{height:85px;width:100%;display:block;background-color:#000}}@media only screen and (max-width:1200px){header .header_tabs_column{flex:0 0 100%!important}}@media only screen and (max-width:1350px) and (min-width:1025px){header .header_nav_secondary{display:none!important}}@media only screen and (max-width:1200px) and (min-width:1025px){header .header_search{padding:0!important;width:400px}}@media only screen and (min-width:1201px){header .header_search{padding:0!important;width:480px}}footer#ftr{background-color:#222;color:#fff;text-decoration:none}footer#ftr a,footer#ftr a:hover{color:#fff;text-decoration:none}.ftr-container{max-width:1400px;margin:0 auto}.ftr-first-row .ftr-container{display:flex;align-items:stretch;flex-flow:row nowrap;justify-content:space-between}.ftr-row{clear:both}.ftr-first-row{font-size:14px}.ftr-logo-links{border-right:solid 1px #353535;position:relative;top:-10px;text-transform:uppercase;margin-top:80px;width:185px;min-width:185px;height:300px}.ftr-logo-links a{display:block;margin-bottom:70px;margin-left:25px}.ftr-logo-links a:last-child{margin-bottom:35px}.ftr-logo-links a span{display:inline-block;height:30px;width:30px;margin-right:30px}.ftr-dd{display:none}.ftr-cat-header,.ftr-logo-links{font-size:12px;font-weight:bold}.ftr-cat-header{margin-bottom:25px;text-transform:uppercase;margin-top:76px}.ftr-cat-links-wrapper{width:100%}.ftr-cat-links a{display:block;padding:7px 0;line-height:16px}footer#ftr .ftr-cat-links a,footer#ftr .ftr-cat-links a:hover{color:#8f8f8f}.ftr-cat-links a:last-child{margin-bottom:65px}.ftr-cat-links-col{width:25%;float:left;padding-left:50px}.ftr-second-row,.ftr-fourth-row{background:#f15b2a;background:-webkit-linear-gradient(left,#f15b2a,#e80a89);background:-o-linear-gradient(right,#f15b2a,#e80a89);background:linear-gradient(to right,#f15b2a,#e80a89)}.ftr-second-row .ftr-container div{height:45px;position:relative;top:25%;transform:translateY(25%)}.ftr-social-icons{text-align:center}.ftr-social-icons a{height:23px;width:23px;display:inline-block;float:none;margin-left:15px;opacity:.95;background-size:23px 23px}.ftr-third-row{font-weight:lighter;min-height:100px;color:#b8b8b8;font-size:12px}.ftr-third-row a,.ftr-third-row a:hover{color:#b8b8b8}.ftr-third-row .ftr-container div{position:relative;top:40px;margin:0 15px}.ftr-terms{float:left}.ftr-terms a{font-weight:normal}.ftr-copyright{float:right}.ftr-fourth-row{min-height:10px}@media screen and (max-width:1150px){.ftr-cat-links-col{float:left;padding-left:3%}}@media screen and (max-width:900px){.ftr-cat-links-col{padding-left:2%}.ftr-logo-links{min-width:inherit}.ftr-logo-links a span{margin-right:15px}}@media screen and (max-width:768px){.ftr-logo-links{min-width:33%;padding-left:50px;border:0;margin-top:40px;height:inherit;position:relative;top:0}.ftr-logo-links a{margin-left:0}.ftr-cat-links-wrapper,.ftr-cat-links-col,.ftr-cat-header,.ftr-cat-links{width:100%}.ftr-cat-links-col{padding-left:0;position:relative}.ftr-cat-header{padding-bottom:30px;padding-top:30px;padding-left:30px;border-left:1px solid #353535;border-top:1px solid #353535;margin-bottom:0;margin-top:0;cursor:pointer}.ftr-cat-links-col:first-child .ftr-cat-header{border-top:0}.ftr-dd{position:absolute;top:35px;right:30px;display:block;cursor:pointer;font-size:10px}.ftr-cat-links{display:none;width:100%}.ftr-cat-links a{padding:15px 0 15px 60px;background-color:#2b2b2b}.ftr-cat-links a:hover{background-color:#353535}.ftr-cat-links a:last-child{margin-bottom:0}.ftr-dd{font-size:8px}.ftr-second-row{position:relative;top:0}.ftr-third-row{text-align:center}.ftr-third-row .ftr-container{padding:35px 0}.ftr-third-row .ftr-container div{height:inherit;position:inherit;top:0;transform:translateY(0);float:none}.ftr-cat-links-col:last-child .ftr-cat-links a:last-child{margin-bottom:10px}}@media screen and (max-width:600px){.ftr-logo-links{padding-left:0;transform:translateX(20%)}.ftr-logo-links a{margin-left:0;margin-bottom:33px;width:100px;text-align:center}.ftr-logo-links a span{margin-left:15px;margin-bottom:10px}}@media screen and (max-width:414px){.ftr-first-row .ftr-container{display:block;text-align:center}.ftr-logo-links{min-width:100%;transform:translateX(0);margin-top:0;padding-top:40px}.ftr-cat-links-col:first-child{border-top:solid 1px #353535}.ftr-logo-links a{display:inline-block;width:70px;margin:0 5%}.ftr-cat-links-col{min-width:100%;text-align:left}.ftr-cat-header{border-left:0}}h2{font-family:'Gotham SSm A','Gotham SSm B',sans-serif;font-size:36px;font-weight:200}h3{font-family:'Gotham SSm A','Gotham SSm B',sans-serif;font-size:30px;font-weight:200}.text-highlight-gradient{position:relative;z-index:2;font-weight:500}.text-highlight-gradient-block{background:linear-gradient(to right,#f15b2a 0,#e80a89 100%);width:100%;height:61%;position:absolute;left:.15em;bottom:0;right:0;z-index:-1}.share__link{background-repeat:no-repeat;float:left;display:inline-block;margin-left:16px;width:30px;height:30px;position:relative;opacity:.5;background-size:16px 16px;background-position:center}.share__link:first-child{margin-left:0}.share__link:hover{opacity:1}.face-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/Facebook_Icon.svg)}.tweet-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/Twitter_Icon.svg)}.goog-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/GooglePlus_Icon.svg)}.insta-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/Instagram_Icon.svg)}.linkedin-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/LinkedIn_Icon.svg)}.youtube-icon{background-image:url(etc/clientlibs/pluralsight/main/images/icons/desktop/YouTube_Icon.svg)}button,.button{font-family:'Gotham SSm A','Gotham SSm B',sans-serif;font-weight:400;font-size:16px;line-height:1.1;min-width:240px;padding:15px 30px;border:1px solid transparent;white-space:normal;border-radius:2px;color:#fff;background-color:#f15b2a;position:relative;text-align:center;text-decoration:none;display:inline-block;transition:background-color 300ms ease-out;margin:0 0 1.25rem}button:hover,.button:hover{background-color:#fd7346;color:#fff}button:focus,.button:focus{background-color:#fd7346;color:#fff}.button.button--small{font-size:14px;min-width:200px;padding:12px 25px 11px}.generic-modal>.main{display:none}.padding-top-ten{padding-top:10px}.padding-top-twenty{padding-top:20px}.padding-bottom-ten{padding-bottom:10px}.padding-bottom-twenty{padding-bottom:20px}.column-control .column-control-container>.row>.columns:first-child{padding-left:.9375rem!important}.column-control .column-control-container>.row>.columns:last-child{padding-right:.9375rem!important}.row.column-control--super-wide{max-width:1400px}@media screen and (max-width:1024px) and (min-width:600px){.column-control .column-control-container>.row>.columns[class*="large-"]{padding:0 .9375rem!important}.gridStacking .columns[class*="large-"]{float:left;width:50%;margin-bottom:2rem;border:0}.gridStacking .columns+.columns:last-child[class*="large-"]{float:left}.gridStacking .columns[class*="large-"]:nth-child(odd){clear:left}}@media screen and (max-width:600px){.gridStacking .columns[class*="large-"]{width:100%;margin-bottom:1rem;display:inline-block}.column-control .column-control-container>.row>.columns[class*="medium-"]{padding:0 .9375rem!important}}.column-control .column-control-container>.row.no-padding-both>.columns{padding-left:0!important;padding-right:0!important}.search-button__component{color:#fff;margin:auto}.search-button__component .hidden{display:none}@-moz-document url-prefix(){.pricing_plan--container{margin:4vw 1.8% 2vw}
+.pricing_plan--container .pricing_plan--inverter .pricing_plan--price sup{top:18px}
+}@media only screen and (max-width:1024px){.pricing-plans .pricing_plan--container:nth-child(n+2){margin-top:35px}@-moz-document url-prefix(){.pricing_plan--container{margin:5vw auto 0}
+}}.pricing-plans .pricing_plans_all .pricing_plan--switcher input[type="radio"]:checked+label+.switch,.pricing-plans .pricing_plans_all .pricing_plan--switcher input[type="radio"]:checked+label:nth-of-type(n)+.switch{transform:translateX(150px)}.pricing-plans .pricing_plans_all .pricing_plan--switcher input[type="radio"]:checked+label:nth-of-type(1)+.switch{border-radius:25px}.pricing-plans .pricing_plans_all .pricing_plan--switcher input[type="radio"]:checked+label:nth-of-type(2)+.switch{border-radius:25px}.pricing-plans .pricing_plans_all .pricing_plan--container .pricing_plan--listAll li:nth-last-child(1){border-bottom:0}@media only screen and (max-width:1024px){.pricing-plans .pricing_plans_all.pricing-plan--mini .pricing_plan--container:nth-child(n+2){margin-top:20px}}@media only screen and (min-width:1025px){@-moz-document url-prefix(){.pricing_plan--container{margin-bottom:100px}
+}}@-moz-document url-prefix(){.pricing_plan--container .pricing_plan--inverter .pricing_plan--price sup{top:18px}
+}@media only screen and (max-width:1024px){@-moz-document url-prefix(){.pricing_plan--container{margin:5vw auto 50px}
+}}@-moz-document url-prefix(){.pricing_plan--container .pricing_plan--inverter .pricing_plan--price sup{top:18px}
+}@media only screen and (min-width:1025px) and (max-width:1366px){@-moz-document url-prefix(){.pricing_plan--container{margin:5vw 1% 3vw}
+}}.mktoForm{padding:10px 0!important}.mktoForm input{margin-bottom:9px;box-shadow:none;border-radius:2px;padding:15px 5px;height:40px!important}.mktoButton{font-size:12pt!important;height:40px;min-width:160px;width:auto;display:block;position:relative;font-weight:300!important;line-height:40px;padding-top:0!important}.mktoForm .mktoLabel{float:left;line-height:1.75em!important;padding-top:.3em;width:auto;max-width:300px;font-weight:500;color:gray!important;font-size:.9em}.mktoForm input[type="text"],.mktoForm input[type="tel"],.mktoForm input[type="email"],.mktoForm input[type="number"],.mktoForm textarea.mktoField,.mktoForm select.mktoField{height:40px!important;padding:10px!important}.mktoForm label.mktoLabel.mktoHasWidth{width:auto!important}.block--black .mktoForm .mktoLabel{color:#fff}.mktoForm input,.mktoForm select,.mktoForm textarea{float:left!important;clear:left;width:300px!important;max-width:100%;font-size:13px!important;height:30px!important}.mktoHtmlText{width:300px!important;max-width:100%}.mktoButtonWrap{margin:0!important}.mktoOffset,.mktoGutter{display:none!important}.mktoAsterix{padding:0!important;color:#555!important}.block--black .mktoAsterix{color:#fff!important}.mktoButtonRow{margin-top:10px!important}.marketo-form-component{padding-bottom:30px}.marketo-form-component .marketo-form-data.hidden{display:none}.marketo-form--inline .mktoForm{width:auto!important;max-width:720px;margin:0 -30px}.marketo-form--inline .mktoForm::after{clear:both;content:"";display:block}.marketo-form--inline .mktoForm .mktoFormRow{float:left;clear:none;padding:0 30px}.marketo-form--inline .mktoButtonRow{float:left;clear:both;margin:0 30px}@media all and (max-width:720px){.mktoForm,.marketo-form--inline .mktoForm{max-width:300px}.marketo-form--inline .mktoForm .mktoFormRow{padding:0}}@media all and (max-width:360px){.mktoForm button.mktoButton{padding:0 15px 30px}.marketo-form-component{margin-left:-.9375em;margin-right:-.9375em}}#hub-tiles-filters-content .columns:nth-child(2){padding:0 5px}@keyframes blink{0{opacity:1}
+50%{opacity:0}
+100%{opacity:1}
+}@-webkit-keyframes blink{0{opacity:1}
+50%{opacity:0}
+100%{opacity:1}
+}@-moz-keyframes blink{0{opacity:1}
+50%{opacity:0}
+100%{opacity:1}
+}.clear{clear:both}@keyframes controlZoom{0{opacity:0;transform:scale(1)}
+50%{opacity:.5}
+100%{opacity:1;transform:scale(1.5)}
+}.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h1,.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h2,.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h3,.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h4,.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h5,.hero-blog-block .blog-hero-wrapper .title:nth-child(1) h6,.hero-blog-block .blog-hero-wrapper .image:nth-child(1) img{margin-top:45px}.hero-blog-block .title:nth-child(1) h1{font-size:64px!important;font-weight:200!important;line-height:80px!important}@media only screen and (max-width:640px){.hero-blog-block .title:nth-child(1) h1{font-size:40px!important;line-height:50px!important}}.generic-block{overflow:hidden}.block{color:#f3f3f3;background-repeat:no-repeat;background-size:cover;background-position:top;min-height:300px}.block .title{color:#f3f3f3}.block--black{background-color:#181818}.generic-block-wrapper{padding:100px 0;position:relative}.generic-block-wrapper.parallax{background-attachment:fixed}.generic-block-wrapper.padding-top-zero{padding-top:0}.generic-block-wrapper.padding-top-ten{padding-top:10px}.generic-block-wrapper.padding-top-twenty{padding-top:20px}.generic-block-wrapper.padding-bottom-zero{padding-bottom:0}.generic-block-wrapper.padding-bottom-ten{padding-bottom:10px}.generic-block-wrapper.padding-bottom-twenty{padding-bottom:20px}@media screen and (max-width:1024px){.parallax{background-attachment:scroll!important}}@media only screen and (max-width:1024px){.block{min-height:initial}}</style>
+<script type="text/javascript">function getParameterByName(e,t){t||(t=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var a=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(t);return a?a[2]?decodeURIComponent(a[2].replace(/\+/g," ")):"":null}var appHost="stage.pluralsight.com"==window.location.host?"https://app-stage.pluralsight.com":"https://app.pluralsight.com",pagePath=window.location.pathname,redirectPath="";"/"!=pagePath&&0!=pagePath.indexOf("/courses/")&&0!=pagePath.indexOf("/authors/")&&0!=pagePath.indexOf("/paths/")||-1!=document.URL.indexOf("show=home")?0==pagePath.indexOf("/product/channels")&&-1==document.URL.indexOf("show=home")&&(redirectPath="/channels",document.URL.indexOf("cid=")>-1&&(redirectPath="/channels/details/"+getParameterByName("cid"))):redirectPath=pagePath.replace("/authors/","/author/").replace("/paths/","/paths/skill/"),document.cookie.indexOf("www-status-production=1")>-1&&-1==document.cookie.indexOf("ps-abandon-cart")&&"www.pluralsight.com"==window.location.host||document.cookie.indexOf("www-status-staging=1")>-1&&-1==document.cookie.indexOf("ps-abandon-cart")&&"stage.pluralsight.com"==window.location.host?""!=redirectPath?window.location=appHost+redirectPath:$(document).ready(function(){var e=appHost+"/id/dashboard",t=jQuery(".header_sign_up_link");t.text("My Dashboard"),t.attr("href",e),t.attr("title","My Dashboard"),jQuery(".header_sign_in_link").attr("style","display: none !important")}):0!=pagePath.indexOf("/customer/")||"stage.pluralsight.com"!=window.location.host&&"www.pluralsight.com"!=window.location.host?""!=redirectPath?jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?redirectTo="+encodeURIComponent(redirectPath))}):jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?")}):window.location=appHost+"/id?redirectTo="+encodeURIComponent(document.URL);</script>
+<script type="text/javascript">window.loadRemoteScript=function(u,t,a,i,cb){var lrs=document.createElement("script")
+lrs.type=(t||"text/javascript");lrs.id=(i||null);if(a==true){lrs.async=(a||1);}if(lrs.readyState){lrs.onreadystatechange=function(){if(lrs.readyState=="loaded"||lrs.readyState=="complete"){lrs.onreadystatechange=null;cb();}};}else{lrs.onload=function(){cb();};}lrs.src=('https:'==document.location.protocol?'https://':'http://')+u;document.getElementsByTagName("head")[0].appendChild(lrs);}
+var DemandbaseMini={};window.minidbready=function(a){DemandbaseMini={IP:{CompanyProfile:a}};}
+if(document.cookie.indexOf("ps_si=")>-1){window.selectedInterest=document.cookie.split("ps_si=")[1].split(";")[0];}if(document.cookie.indexOf("ps_sct=")>-1){window.selectedConsumerType=document.cookie.split("ps_sct=")[1].split(";")[0];}if(document.cookie.indexOf("ps_sbt=")>-1){window.selectedBusinessType=document.cookie.split("ps_sbt=")[1].split(";")[0];}</script>
+<script type="text/javascript" src="//api.demandbase.com/api/v2/ip.json?key=012bc11d09ef8437662946719f6c82d2&callback=minidbready" async></script>
+<script src="//assets.adobedtm.com/2c5f2b30762ae62377916c09612cd9d60054fba9/satelliteLib-d219ec1f03bb8f042fe31ffc29deb53997d778ef.js"></script>
+<!--<sly data-sly-include="newrelic.html" data-sly-unwrap></sly>-->
+<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/pluralsight/xapple-touch-icon-57x57.png.pagespeed.ic.OnDIMe0Omi.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/pluralsight/xapple-touch-icon-60x60.png.pagespeed.ic.JrekQbiakY.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/pluralsight/xapple-touch-icon-72x72.png.pagespeed.ic.S07vRrWGFu.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/pluralsight/xapple-touch-icon-76x76.png.pagespeed.ic.r6WCTt8INu.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/pluralsight/xapple-touch-icon-114x114.png.pagespeed.ic.GIX84fITYV.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/pluralsight/xapple-touch-icon-120x120.png.pagespeed.ic.cpKtongBlW.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/pluralsight/xapple-touch-icon-144x144.png.pagespeed.ic.JZLWMuDfVA.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/etc/designs/pluralsight/xapple-touch-icon-152x152.png.pagespeed.ic.MJCcB_vSMP.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/etc/designs/pluralsight/xapple-touch-icon-180x180.png.pagespeed.ic.vEWhUvHfRm.png">
+<link rel="icon" type="image/png" href="/etc/designs/pluralsight/xfavicon-32x32.png.pagespeed.ic.z3EdiWChpC.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/etc/designs/pluralsight/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/etc/designs/pluralsight/xfavicon-96x96.png.pagespeed.ic.vIgF40k8ha.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/etc/designs/pluralsight/xfavicon-16x16.png.pagespeed.ic.5ml1gN3VfS.png" sizes="16x16">
+<link rel="manifest" href="/etc/designs/pluralsight/manifest.json">
+<link rel="mask-icon" href="/etc/designs/pluralsight/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/etc/designs/pluralsight/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/etc/designs/pluralsight/mstile-144x144.png">
+<meta name="msapplication-config" content="/etc/designs/pluralsight/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript">var PS=PS||{};PS['Constants']=PS['Constants']||{};PS.Constants={cmsUrl:'https://cms.pluralsight.com/v1',autocompleteUrl:'//content.atomz.com/autocomplete/sp10/05/0d/ad/',stageSpUrl:'//stage-sp10050dad.guided.ss-omtrdc.net/',ddCmsUrl:'https://dd-cms-web.pluralsight.com',spUrl:'//sp10050dad.guided.ss-omtrdc.net',appUrl:'https://app.pluralsight.com'};</script>
+<title>Pluralsight | Unlimited Online Developer, IT and Creative Training</title>
+<meta property="og:title" content="Pluralsight - Unlimited Online Developer, IT and Creative Training">
+<meta name="twitter:title" content="Pluralsight - Unlimited Online Developer, IT and Creative Training">
+</head>
+<body class="mode-disabled home-template"><noscript><meta HTTP-EQUIV="refresh" content="0;url='http://www.pluralsight.com/?PageSpeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="http://www.pluralsight.com/?PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<script>$=jQuery;</script>
+<div class="site-wrap">
+<div class="nav-context ">
+<noindex><div class="header-container"><header class="header">
+<a href="/" class="pluralsight horizontal--logo"><div class="pluralsight-spacing"></div></a>
+<div class="header_browse">
+<div class="header_nav--menu header_nav_courses">
+<a href="#" class="header_nav_primary">Courses <div class="icons" icon="down-arrow"></div></a>
+<div class="header_dropdown" style="display:none;">
+<div id="header_tabs" class="container-lg">
+<div class="closebutton">x</div>
+<ul>
+<li class="header_roles software-development header_tabs_link active" data-tab="software-development">
+<a>Software Development</a>
+</li>
+<li class="header_roles it-ops header_tabs_link" data-tab="it-ops">
+<a>IT Ops</a>
+</li>
+<li class="header_roles creative-professional header_tabs_link" data-tab="creative-professional">
+<a>Creative Professional</a>
+</li>
+<li class="header_roles data-professional header_tabs_link" data-tab="data-professional">
+<a>Data Professional</a>
+</li>
+<li class="header_roles architecture-construction header_tabs_link" data-tab="architecture-construction">
+<a>Architecture &amp; Construction</a>
+</li>
+<li class="header_roles manufacturing-design header_tabs_link" data-tab="manufacturing-design">
+<a>Manufacturing &amp; Design</a>
+</li>
+<li class="header_roles business-professional header_tabs_link" data-tab="business-professional">
+<a>Business Professional</a>
+</li>
+<li class="header_roles info-cybersecurity header_tabs_link" data-tab="info-cybersecurity">
+<a>Information &amp; Cyber Security</a>
+</li>
+</ul>
+<div id="software-development" class="header_tabs_content active">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul class="header_topics_menu">
+<li class="first">Courses</li>
+<li><a href="/browse/software-development/web-development">Web Development</a></li>
+<li><a href="/browse/software-development/javascript">JavaScript</a></li>
+<li><a href="/browse/software-development/python">Python</a></li>
+<li><a href="/browse/software-development/c-plus">C++</a></li>
+<li><a href="/browse/software-development/java">Java</a></li>
+<li><a href="/browse/software-development/mobile-development">Mobile Development</a></li>
+<li><a href="/browse/software-development/c-sharp">C#</a></li>
+<li><a href="/browse/software-development/node-js">Node.js</a></li>
+<li class="last"><a href="/browse/software-development">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/angular-js">
+<div class="item-each">
+<div class="item-image"><img alt="AngularJS" src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png"></div>
+<div class="item-text">
+AngularJS
+<ul>
+<li><span>14</span> Courses</li>
+<li><span>55</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/javascript">
+<div class="item-each">
+<div class="item-image"><img alt="JavaScript" src="https://pluralsight.imgix.net/paths/path-icons/javascript-36f5949a45.png"></div>
+<div class="item-text">
+JavaScript
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>21</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/react">
+<div class="item-each">
+<div class="item-image"><img alt="React" src="https://pluralsight2.imgix.net/paths/images/react-0f6558f88f.png"></div>
+<div class="item-text">
+React
+<ul>
+<li><span>8</span> Courses</li>
+<li><span>27</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/node-js">
+<div class="item-each">
+<div class="item-image"><img alt="Node.js" src="https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png"></div>
+<div class="item-text">
+Node.js
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>28</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/html5">
+<div class="item-each">
+<div class="item-image"><img alt="HTML5" src="https://pluralsight.imgix.net/paths/path-icons/html5-7ac65c8ec0.png"></div>
+<div class="item-text">
+HTML5
+<ul>
+<li><span>11</span> Courses</li>
+<li><span>35</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=Javascript&categories=course&sort=popularity">JavaScript</a></li>
+<li><a href="/search?q=Node-js&categories=course&sort=popularity">Node.js</a></li>
+<li><a href="/search?q=C%23&categories=course&sort=popularity">C#</a></li>
+<li><a href="/search?q=Java&categories=course&sort=popularity">Java</a></li>
+<li><a href="/search?q=Angular&categories=course&sort=popularity">Angular2</a></li>
+<li><a href="/search?q=Python&categories=course&sort=popularity">Python</a></li>
+<li><a href="/search?q=mysql&categories=course&sort=popularity">MySQL</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="it-ops" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/it-ops/it-certifications">IT Certifications</a></li>
+<li><a href="/browse/it-ops/security">Security</a></li>
+<li><a href="/browse/it-ops/database-administration">Database Administration</a></li>
+<li><a href="/browse/it-ops/virtualization">Virtualization</a></li>
+<li><a href="/browse/it-ops/it-networking">IT Networking</a></li>
+<li><a href="/browse/it-ops/servers">Servers</a></li>
+<li><a href="/browse/it-ops/microsoft-office">Microsoft Office</a></li>
+<li><a href="/browse/it-ops/windows-server">Windows Server</a></li>
+<li class="last"><a href="/browse/it-ops">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/fundamentals-of-it-operations">
+<div class="item-each">
+<div class="item-image"><img alt="Fundamentals of IT Operations" src="https://pluralsight.imgix.net/paths/path-icons/fundamentals-of-it-operations-95797723fe.png"></div>
+<div class="item-text">
+Fundamentals of IT Operations
+<ul>
+<li><span>29</span> Courses</li>
+<li><span>87</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/comptia-a-plus">
+<div class="item-each">
+<div class="item-image"><img alt="CompTIA A+" src="https://pluralsight.imgix.net/paths/path-icons/server-admin-windows-9e9af6b278.png"></div>
+<div class="item-text">
+CompTIA A+
+<ul>
+<li><span>11</span> Courses</li>
+<li><span>40</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/comptia-network-plus">
+<div class="item-each">
+<div class="item-image"><img alt="CompTIA Network+" src="https://pluralsight.imgix.net/paths/path-icons/networks-d4455e1c98.png"></div>
+<div class="item-text">
+CompTIA Network+
+<ul>
+<li><span>6</span> Courses</li>
+<li><span>26</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/mysql">
+<div class="item-each">
+<div class="item-image"><img alt="MySQL" src="https://pluralsight.imgix.net/paths/mysql-e0720d7b98.png"></div>
+<div class="item-text">
+MySQL
+<ul>
+<li><span>8</span> Courses</li>
+<li><span>17</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/vmware-vsphere-6-foundations">
+<div class="item-each">
+<div class="item-image"><img alt="VMware vSphere® 6 Foundations" src="https://pluralsight.imgix.net/paths/path-icons/vmware-a9cdbeb3ff.png"></div>
+<div class="item-text">
+VMware vSphere® 6 Foundations
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>23</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=it-certifications&categories=course&sort=popularity">IT Certifications</a></li>
+<li><a href="/search?q=virtualization&categories=course&sort=popularity">Virtualization</a></li>
+<li><a href="/search?q=security&categories=course&sort=popularity">Security</a></li>
+<li><a href="/search?q=it-networking&categories=course&sort=popularity">IT Networking</a></li>
+<li><a href="/search?q=window-server&categories=course&sort=popularity">Windows Server</a></li>
+<li><a href="/search?q=linux&categories=course&sort=popularity">Linux</a></li>
+<li><a href="/search?q=cloud-computing&categories=course&sort=popularity">Cloud Computing</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="creative-professional" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/creative-professional/game-development">Game Development</a></li>
+<li><a href="/browse/creative-professional/3d-design">3D Design</a></li>
+<li><a href="/browse/creative-professional/vfx">VFX</a></li>
+<li><a href="/browse/creative-professional/graphic-design">Graphic Design</a></li>
+<li><a href="/browse/creative-professional/photoshop">Photoshop</a></li>
+<li><a href="/browse/creative-professional/web-design">Web Design</a></li>
+<li class="last"><a href="/browse/creative-professional">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/graphic-design">
+<div class="item-each">
+<div class="item-image"><img alt="Graphic Design" src="https://pluralsight.imgix.net/paths/path-icons/graphic-design-8e71846112.png"></div>
+<div class="item-text">
+Graphic Design
+<ul>
+<li><span>23</span> Courses</li>
+<li><span>34</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/game-environment-modeling">
+<div class="item-each">
+<div class="item-image"><img alt="Game Environment Modeling" src="https://pluralsight.imgix.net/paths/path-icons/game-environment-modeling-0a89aaaced.png"></div>
+<div class="item-text">
+Game Environment Modeling
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>28</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/after-effects-cc">
+<div class="item-each">
+<div class="item-image"><img alt="After Effects CC" src="https://pluralsight.imgix.net/paths/path-icons/aftereffects-e913d6f970.png"></div>
+<div class="item-text">
+After Effects CC
+<ul>
+<li><span>13</span> Courses</li>
+<li><span>33</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/photoshop-photo-manipulation">
+<div class="item-each">
+<div class="item-image"><img alt="Photoshop: Photo Manipulation" src="https://pluralsight.imgix.net/paths/path-icons/photoshop-e26c2b1bff.png"></div>
+<div class="item-text">
+Photoshop: Photo Manipulation
+<ul>
+<li><span>10</span> Courses</li>
+<li><span>22</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li>
+<div class="item  creative">
+<a href="/paths/maya-character-modeling">
+<div class="item-each">
+<div class="item-image"><img alt="Maya: Character Modeling" src="https://pluralsight.imgix.net/paths/path-icons/maya-34da88e18b.png"></div>
+<div class="item-text">
+Maya: Character Modeling
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>34</span> Hours</li>
+</ul>
+</div>
+</div></a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=graphic-design&categories=course&sort=popularity">Graphic Design</a></li>
+<li><a href="/search?q=game-development&categories=course&sort=popularity">Game Development</a></li>
+<li><a href="/search?q=3d-vfx&categories=course&sort=popularity">3D &amp; Visual Effects</a></li>
+<li><a href="/search?q=visual-communication&categories=course&sort=popularity">Visual Communication</a></li>
+<li><a href="/search?q=photoshop&categories=course&sort=popularity">Photoshop</a></li>
+<li><a href="/search?q=web-design&categories=course&sort=popularity">Web Design</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="data-professional" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/data-professional/business-intelligence-data-pro">Business Intelligence</a></li>
+<li><a href="/browse/data-professional/big-data">Big Data</a></li>
+<li><a href="/browse/data-professional/data-dashboard">Data Dashboard</a></li>
+<li><a href="/browse/data-professional/oracle">Oracle</a></li>
+<li><a href="/browse/data-professional/mysql">MySQL</a></li>
+<li><a href="/browse/data-professional/sql">SQL</a></li>
+<li><a href="/browse/data-professional/tableau">Tableau</a></li>
+<li><a href="/browse/data-professional/sql-server">SQL Server</a></li>
+<li class="last"><a href="/browse/data-professional">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/csharp">
+<div class="item-each">
+<div class="item-image"><img alt="C#" src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png"></div>
+<div class="item-text">
+C#
+<ul>
+<li><span>16</span> Courses</li>
+<li><span>64</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/mysql">
+<div class="item-each">
+<div class="item-image"><img alt="MySQL" src="https://pluralsight.imgix.net/paths/mysql-e0720d7b98.png"></div>
+<div class="item-text">
+MySQL
+<ul>
+<li><span>8</span> Courses</li>
+<li><span>17</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/android">
+<div class="item-each">
+<div class="item-image"><img alt="Android" src="https://pluralsight.imgix.net/paths/path-icons/android-53f8da146d.png"></div>
+<div class="item-text">
+Android
+<ul>
+<li><span>20</span> Courses</li>
+<li><span>55</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/fusion-360-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="Fusion 360: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/fusion360-5d76c87271.png"></div>
+<div class="item-text">
+Fusion 360: Core Skills
+<ul>
+<li><span>15</span> Courses</li>
+<li><span>30</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/autocad-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="AutoCAD: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/autocad-d1d797239b.png"></div>
+<div class="item-text">
+AutoCAD: Core Skills
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>19</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=business-intelligence&categories=course&sort=popularity">Business Intelligence</a></li>
+<li><a href="/search?q=data-dashboard&categories=course&sort=popularity">Data Dashboard</a></li>
+<li><a href="/search?q=oracle&categories=course&sort=popularity">Oracle</a></li>
+<li><a href="/search?q=mysql&categories=course&sort=popularity">MySQL</a></li>
+<li><a href="/search?q=sql&categories=course&sort=popularity">SQL</a></li>
+<li><a href="/search?q=sql-server&categories=course&sort=popularity">SQL Server</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="architecture-construction" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/architecture-construction/cad">CAD</a></li>
+<li><a href="/browse/architecture-construction/revit">Revit</a></li>
+<li><a href="/browse/architecture-construction/v-ray">V-Ray</a></li>
+<li><a href="/browse/architecture-construction/autocad">AutoCAD</a></li>
+<li><a href="/browse/architecture-construction/rhino">Rhino</a></li>
+<li><a href="/browse/architecture-construction/adobe">Adobe</a></li>
+<li><a href="/browse/architecture-construction/3ds-max">3ds Max</a></li>
+<!--<li><a href="/content/pluralsight/en/browse/architecture-construction/sql-server.html">SQL Server</a></li>-->
+<li class="last"><a href="/browse/architecture-construction">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/revit-architecture-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="Revit Architecture: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/revit-2825d5ef64.png"></div>
+<div class="item-text">
+Revit Architecture: Core Skills
+<ul>
+<li><span>7</span> Courses</li>
+<li><span>19</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/revit-architecture-modeling">
+<div class="item-each">
+<div class="item-image"><img alt="Revit Architecture: Modeling Families" src="https://pluralsight.imgix.net/paths/path-icons/revit-2825d5ef64.png"></div>
+<div class="item-text">
+Revit Architecture: Modeling Families
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>16</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/maya-environment-modeling">
+<div class="item-each">
+<div class="item-image"><img alt="Maya: Environment Modeling" src="https://pluralsight.imgix.net/paths/path-icons/maya-34da88e18b.png"></div>
+<div class="item-text">
+Maya: Environment Modeling
+<ul>
+<li><span>13</span> Courses</li>
+<li><span>73</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/autocad-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="AutoCAD: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/autocad-d1d797239b.png"></div>
+<div class="item-text">
+AutoCAD: Core Skills
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>19</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=cad&categories=course&sort=popularity">CAD</a></li>
+<li><a href="/search?q=drafting&categories=course&sort=popularity">Drafting</a></li>
+<li><a href="/search?q=architecture-modeling&categories=course&sort=popularity">Architecture Modeling</a></li>
+<li><a href="/search?q=bim&categories=course&sort=popularity">BIM</a></li>
+<li><a href="/search?q=structural-modeling&categories=course&sort=popularity">Structural Modeling</a></li>
+<li><a href="/search?q=visualization-rendering&categories=course&sort=popularity">Visualization Rendering</a></li>
+<li><a href="/search?q=civil-engineering&categories=course&sort=popularity">Civil Engineering</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="manufacturing-design" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/manufacturing-design/modeling">Modeling</a></li>
+<li><a href="/browse/manufacturing-design/sketching">Sketching</a></li>
+<li><a href="/browse/manufacturing-design/product-design">Product Design</a></li>
+<li><a href="/browse/manufacturing-design/maya">Maya</a></li>
+<li><a href="/browse/manufacturing-design/sketchbook">Sketchbook</a></li>
+<li><a href="/browse/manufacturing-design/rhino">Rhino</a></li>
+<li><a href="/browse/manufacturing-design/solidworks">Solidworks</a></li>
+<li><a href="/browse/manufacturing-design/keyshot">Keyshot</a></li>
+<li class="last"><a href="/browse/manufacturing-design">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/fusion-360-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="Fusion 360: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/fusion360-5d76c87271.png"></div>
+<div class="item-text">
+Fusion 360: Core Skills
+<ul>
+<li><span>15</span> Courses</li>
+<li><span>30</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/maya-environment-modeling">
+<div class="item-each">
+<div class="item-image"><img alt="Maya: Environment Modeling" src="https://pluralsight.imgix.net/paths/path-icons/maya-34da88e18b.png"></div>
+<div class="item-text">
+Maya: Environment Modeling
+<ul>
+<li><span>13</span> Courses</li>
+<li><span>73</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/solidworks-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="SOLIDWORKS: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/solidworks-114573eb04.png"></div>
+<div class="item-text">
+SOLIDWORKS: Core Skills
+<ul>
+<li><span>20</span> Courses</li>
+<li><span>25</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=modeling&categories=course&sort=popularity">Modeling</a></li>
+<li><a href="/search?q=product-design&categories=course&sort=popularity">Product Design</a></li>
+<li><a href="/search?q=keyshot&categories=course&sort=popularity">Keyshot</a></li>
+<li><a href="/search?q=sketching&categories=course&sort=popularity">Sketching</a></li>
+<li><a href="/search?q=modo&categories=course&sort=popularity">Modo</a></li>
+<li><a href="/search?q=maya&categories=course&sort=popularity">Maya</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="business-professional" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/business-professional/leadership">Leadership</a></li>
+<li><a href="/browse/business-professional/project-management">Project Management</a></li>
+<li><a href="/browse/business-professional/agile">Agile</a></li>
+<li><a href="/browse/business-professional/scrum">Scrum</a></li>
+<li><a href="/browse/business-professional/pmp">PMP</a></li>
+<li><a href="/browse/business-professional/kanban">Kanban</a></li>
+<li><a href="/browse/business-professional/careers">Careers</a></li>
+<li><a href="/browse/business-professional/business-intelligence-business-pro">Business Intelligence</a></li>
+<li class="last"><a href="/browse/business-professional">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/fundamental-of-it-operations">
+<div class="item-each">
+<div class="item-image"><img alt="Fundamentals of IT Operations" src="https://pluralsight.imgix.net/paths/path-icons/fundamentals-of-it-operations-95797723fe.png"></div>
+<div class="item-text">
+Fundamentals of IT Operations
+<ul>
+<li><span>29</span> Courses</li>
+<li><span>87</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/autocad-core-skills">
+<div class="item-each">
+<div class="item-image"><img alt="AutoCAD: Core Skills" src="https://pluralsight.imgix.net/paths/path-icons/autocad-d1d797239b.png"></div>
+<div class="item-text">
+AutoCAD: Core Skills
+<ul>
+<li><span>9</span> Courses</li>
+<li><span>19</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/business-analysis-pmi-pba">
+<div class="item-each">
+<div class="item-image"><img alt="Business Analysis – PMI-PBA®" src="https://pluralsight.imgix.net/paths/path-icons/business-analysis-fc3f6703c2.png"></div>
+<div class="item-text">
+Business Analysis – PMI-PBA®
+<ul>
+<li><span>5</span> Courses</li>
+<li><span>14</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/using-microsoft-office-2016">
+<div class="item-each">
+<div class="item-image"><img alt="Using Microsoft Office 2016" src="https://pluralsight2.imgix.net/paths/images/comptia-project-7fea631277.png"></div>
+<div class="item-text">
+Using Microsoft Office 2016
+<ul>
+<li><span>15</span> Courses</li>
+<li><span>35</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="/paths/pmp">
+<div class="item-each">
+<div class="item-image"><img alt="PMP®" src="https://pluralsight.imgix.net/paths/path-icons/pmp-fc3f6703c2.png"></div>
+<div class="item-text">
+PMP®
+<ul>
+<li><span>14</span> Courses</li>
+<li><span>42</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=leadership&categories=course&sort=popularity">Leadership</a></li>
+<li><a href="/search?q=project-management&categories=course&sort=popularity">Project Management</a></li>
+<li><a href="/search?q=agile&categories=course&sort=popularity">Agile</a></li>
+<li><a href="/search?q=careers&categories=course&sort=popularity">Careers</a></li>
+<li><a href="/search?q=business-intelligence&categories=course&sort=popularity">Business Intelligence</a></li>
+<li><a href="/search?q=scrum&categories=course&sort=popularity">Scrum</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="info-cybersecurity" class="header_tabs_content">
+<div class="header_tabs_content--container">
+<div class="header_tabs_column">
+<ul>
+<li class="first">Courses</li>
+<li><a href="/browse/information-cyber-security/security-auditing">Security Auditing</a></li>
+<li><a href="/browse/information-cyber-security/penetration-testing">Penetration Testing</a></li>
+<li><a href="/browse/information-cyber-security/digital-forensics">Digital Forensics</a></li>
+<li><a href="/browse/information-cyber-security/malware-analysis">Malware Analysis</a></li>
+<li><a href="/browse/information-cyber-security/security-fundamentals">Security Fundamentals</a></li>
+<li><a href="/browse/information-cyber-security/secure-by-design">Secure by Design</a></li>
+<li><a href="/browse/information-cyber-security/security-certifications">Security Certifications</a></li>
+<li class="last"><a href="/browse/information-cyber-security">More courses</a></li>
+</ul>
+</div>
+<div class="header_tabs_column paths">
+<ul>
+<li class="first">Paths</li>
+<li>
+<div class="item">
+<a href="/paths/expert-perspectives-on-cyber-security">
+<div class="item-each">
+<div class="item-image"><img alt="Expert Perspectives on Cyber Security" src="https://pluralsight.imgix.net/paths/path-icons/info-security-5d8ab8e621.png"></div>
+<div class="item-text">
+Expert Perspectives on Cyber Security
+<ul>
+<li><span>20</span> Courses</li>
+<li><span>20</span> Hours</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="last"><a href="https://app.pluralsight.com/paths">View all paths</a></li>
+</ul>
+</div>
+<div class="header_tabs_column popular full-column">
+<ul>
+<li class="first">Popular</li>
+<li><a href="/search?q=security-certifications&categories=course&sort=popularity">Security Certifications</a></li>
+<li><a href="/search?q=security-fundamentals&categories=course&sort=popularity">Security Fundamentals</a></li>
+<li><a href="/search?q=security-auditing&categories=course&sort=popularity">Security Auditing</a></li>
+<li><a href="/search?q=penetration-testing&categories=course&sort=popularity">Penetration Testing</a></li>
+<li><a href="/search?q=digital-forensics&categories=course&sort=popularity">Digital Forensics</a></li>
+<li><a href="/search?q=malware-analysis&categories=course&sort=popularity">Malware Analysis</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header_nav--menu header_nav_search">
+<div class="header_search search-button__component">
+<form id="header_searchForm" class="header_search--form" action="#">
+<input type="text" name="q" class="header_search--input" placeholder="What do you want to learn?" autocomplete="off">
+<input type="text" disabled="disabled" autocomplete="off" class="search-menu__search-term--shadow">
+</form>
+<a href="/search" class="hidden header_search--url"></a>
+<div class="header_dropdown" style="display:none;">
+<div id="header_tabs--search" class="container-lg">
+<div class="closebutton">x</div>
+<div id="header-search-results-all" class="header_tabs_content--container">
+<div id="search-menu__results-dropdown" class="header_tabs_column">
+<div id="header_dropdown--resultList"></div>
+<div id="header_dropdown--resultListCourses"></div>
+</div>
+<div class="header_tabs_column paths">
+<div id="header_dropdown--resultListPaths"></div>
+</div>
+</div>
+</div>
+</div>
+<script id="header-search-categories-templates-partial" type="text/x-handlebars-template">
+    {{#compare this.name '===' 'courses'}}
+    <ul class="header_dropdown--lists">
+        <li class="first">{{{this.name}}}</li>
+        {{#each this.results}}
+            <li><a href="{{formatCourseURL this.courseName}}">{{{this.title}}}</a></li>
+        {{/each}}
+        <li class="last"><a class="view-all-link" data-tab-param="{{mapResultSetNameToTabName this.name}}" data-categories="{{this.name}}">See more results</a></li>
+    </ul>
+    {{/compare}}
+</script>
+</div>
+</div>
+<div class="header_nav--menu header_nav_submenus"><a href="/business" class="header_nav_secondary">Business</a></div>
+<div class="header_nav--menu header_nav_submenus"><a href="/learn" class="header_nav_secondary">Individuals</a></div>
+<div class="header_nav">
+<ul>
+<li class="mobile-only">
+<ul>
+<li class="mobile-signin"><a class="header_sign_up_link" href="/pricing" data-aa-title="nav-signup-cta">Get started</a></li>
+<li class="mobile-signin"><a class="header_sign_in_link sign_in_link" href="https://app.pluralsight.com/id?">Log in</a></li>
+<li><a href="/learn">Individuals</a></li>
+<li><a href="/business">Business</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="mobile-breaker">Categories</li>
+<li><a href="/browse/software-development">Software Development</a></li>
+<li><a href="/browse/it-ops">IT Ops</a></li>
+<li><a href="/browse/creative-professional">Creative Professional</a></li>
+<li><a href="/browse/data-professional">Data Professional</a></li>
+<li><a href="/browse/architecture-construction">Architecture &amp; Construction</a></li>
+<li><a href="/browse/manufacturing-design">Manufacturing &amp; Design</a></li>
+<li><a href="/browse/business-professional">Business Professional</a></li>
+<li><a href="/browse/information-cyber-security">Information &amp; Cyber Security</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<a href="#" class="header_menu">
+<div class="header_menu_line"></div>
+<div class="header_menu_line"></div>
+<div class="header_menu_line"></div>
+</a>
+<div class="header_utilities">
+<a href="/pricing" class="btn-xs header_sign_up_link" data-aa-title="nav-signup-cta">Get started</a>
+<a href="https://app.pluralsight.com/id?" class="btn-xs flat white header_sign_in_link sign_in_link">Log in</a>
+</div>
+</header>
+<div class="header_padding"></div>
+</div></noindex>
+<div id="content" role="main">
+<div class="contain"><div class="free-form-component section">
+<style>.skills_iq--hero:hover{color:#fff;text-decoration:none}.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 200px;color:#fff;display:block;text-decoration:none;height:500px;position:relative}@media only screen and (min-width:600px){.skills_iq--hero{height:600px}}.skills_iq--branding{margin:0 auto;max-width:365px}.skills_iq--content{box-sizing:border-box;left:50%;padding:20px;position:absolute;text-align:center;top:50%;width:100%;transform:translate(-50%,-55%)}.skills_iq--title{font-size:40px;font-weight:900;letter-spacing:.15em;line-height:48px;padding:16px 0;text-transform:uppercase}.skills_iq--button{background:#fff;border:solid 1px #fff;border-radius:2px;color:#000;display:inline-block;font-size:18px;font-weight:500;line-height:48px;margin:10px 5px;padding:0 40px;position:relative}.skills_iq--button:hover{color:#000;text-decoration:none}.skills_iq--button.stroke{background:transparent;color:#fff;padding:0 40px 0 55px}.skills_iq--button.stroke{color:#fff;text-decoration:none}.skills_iq--body{display:block;height:600px}.skills_iq--body,.skills_iq--body:hover{color:#fff;text-decoration:none}@media only screen and (min-width:600px){.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 400px}.skills_iq--title{font-size:48px;line-height:60px;padding:48px 0}}@media only screen and (min-width:1000px){.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 600px}.skills_iq--title{font-size:60px;line-height:60px;padding:60px 0}}</style>
+<div class="skills_iq--hero">
+<div class="skills_iq--body">
+<div class="skills_iq--content">
+<div class="skills_iq--branding"><img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--branding@2x.png" alt=""/></div>
+<div class="skills_iq--title">This is not a test</div>
+<a href="https://www.pluralsight.com/product/pluralsight-iq#block_skills_" class="skills_iq--button">Get your IQ</a>
+<a href="https://www.youtube.com/embed/oVpmevtmGoE?autoplay=1&amp;hd=1&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;enablejsapi=1" class="skills_iq--button stroke fancybox fancybox.iframe">
+<svg width="36" height="36" viewBox="0 0 36 36" id="svgicon" style="position:absolute;top:50%;transform:translatey(-50%);left:12px;">
+<path fill="#FFFFFF" d="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28"/>
+</svg>
+Learn more
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div class="generic-block-wrapper parallax block block--black block--left block--middle   padding-top-ten padding-bottom-ten  clearfix">
+<div class="main clearfix">
+<div class="clearfix"><div class="spacer section"><div class="spacer" style="height:40px"></div>
+</div>
+<div class="column-control section"><div>
+<div class="container column-control-container gridStacking">
+<div class="row       padding-top-ten padding-bottom-ten column-control--super-wide">
+<div class="large-3 columns"><div class="card section">
+<div class="ps_card">
+<div class="ps_card--container">
+<a class="ps_card--main" href="https://www.pluralsight.com/product/iris">
+<div class="ps_card--image" style="background-image:url(/content/pluralsight/en/jcr:content/main/generic_block/parsys/columns_copy/column-parsys-1/card/image-res/xfile.img.585d1607-a28c-407f-9809-c3a507690afc.jpg.pagespeed.ic.Ev71Zb0jNp.jpg)">
+</div>
+<div class="ps_card--body-wrapper">
+<div class="ps_card--body">
+<div class="ps_card--type">
+Introducing
+</div>
+<div class="ps_card--headlines">
+<div class="ps_card--content">
+<div class="ps_card--title">
+<span>Pluralsight Iris</span>
+</div>
+<div class="ps_card--subtitle">
+Intelligent skill development.
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="ps_card--foot">
+<a href="https://www.pluralsight.com/product/iris">Learn more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="large-3 columns"><div class="card section">
+<div class="ps_card">
+<div class="ps_card--container">
+<a class="ps_card--main" href="https://www.pluralsight.com/one">
+<div class="ps_card--image" style="background-image:url(/content/pluralsight/en/jcr:content/main/generic_block/parsys/columns_copy/column-parsys-2/card_175093162/image-res/xfile.img.6b69889d-a052-4bf9-a4f0-5c78cba33f41.jpg.pagespeed.ic.Z9AlCnC81X.jpg)">
+</div>
+<div class="ps_card--body-wrapper">
+<div class="ps_card--body">
+<div class="ps_card--type">
+Announcing
+</div>
+<div class="ps_card--headlines">
+<div class="ps_card--content">
+<div class="ps_card--title">
+<span>Pluralsight One</span>
+</div>
+<div class="ps_card--subtitle">
+Our commitment to democratize technology.
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="ps_card--foot">
+<a href="https://www.pluralsight.com/one">Learn more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="large-3 columns"><div class="card section">
+<div class="ps_card">
+<div class="ps_card--container">
+<a class="ps_card--main" href="https://www.pluralsight.com/newsroom/press-releases/pluralsight-namedoneof2017sbestworkplacesbygreatplacetoworkandfo">
+<div class="ps_card--image" style="background-image:url(/content/pluralsight/en/jcr:content/main/generic_block/parsys/columns_copy/column-parsys-3/card/image-res/xfile.img.1592ba95-4139-4436-972d-ebe2c66eacc2.jpg.pagespeed.ic.Joq4ldT3Nx.jpg)">
+</div>
+<div class="ps_card--body-wrapper">
+<div class="ps_card--body">
+<div class="ps_card--type">
+Announcing
+</div>
+<div class="ps_card--headlines">
+<div class="ps_card--content">
+<div class="ps_card--title">
+<span>Pluralsight named a Great Place to Work</span>
+</div>
+<div class="ps_card--subtitle">
+Our strong culture earned us a spot on the esteemed list.
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="ps_card--foot">
+<a href="https://www.pluralsight.com/newsroom/press-releases/pluralsight-namedoneof2017sbestworkplacesbygreatplacetoworkandfo">Learn more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="large-3 columns"><div class="card section">
+<div class="ps_card">
+<div class="ps_card--container">
+<a class="ps_card--main" href="https://www.pluralsight.com/product/pluralsight-iq">
+<div class="ps_card--image" style="background-image:url(/content/pluralsight/en/jcr:content/main/generic_block/parsys/columns_copy/column-parsys-4/card/image-res/xfile.img.c60c4651-19d2-42a5-af7e-f60a25a15d7b.jpg.pagespeed.ic.flDr0FtWAk.jpg)">
+</div>
+<div class="ps_card--body-wrapper">
+<div class="ps_card--body">
+<div class="ps_card--type">
+New feature
+</div>
+<div class="ps_card--headlines">
+<div class="ps_card--content">
+<div class="ps_card--title">
+<span>Pluralsight IQ</span>
+</div>
+<div class="ps_card--subtitle">
+The new standard for measuring technology skills.
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="ps_card--foot">
+<a href="https://www.pluralsight.com/product/pluralsight-iq">Learn more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="main parsys"><div class="free-form-component section">
+<style>.ps_what{color:#fff;overflow:hidden;background:#222}.ps_what--container{margin:0 auto;max-width:1400px;padding:20px 0 40px 0;position:relative}.ps_what--container:after{clear:both;content:"";display:block}.ps_what--content{box-sizing:border-box;height:700px;max-width:700px;padding:20px 30px;position:relative;z-index:9}@media only screen and (min-width:600px){.ps_what--content{height:780px;padding:40px 50px}}@media only screen and (min-width:1025px){.ps_what--content{height:auto;padding:60px 0 50px 90px;margin-right:670px}}.ps_what--device{bottom:0;position:absolute;right:0;width:500px;z-index:99}@media only screen and (min-width:700px){.ps_what--device{width:670px}}.ps_what--description{color:#ddd;font-size:14px;font-weight:200;line-height:24px;margin-bottom:40px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}@media only screen and (min-width:600px){.ps_what--description{font-size:18px;line-height:28px}}.ps_what--gradient{background:-moz-radial-gradient(center,ellipse cover,#565656 0%,rgba(86,86,86,0) 50%);background:-webkit-radial-gradient(center,ellipse cover,#565656 0%,rgba(86,86,86,0) 50%);background:radial-gradient(ellipse at center,#565656 0%,rgba(86,86,86,0) 50%);display:none;height:1000px;right:-40px;bottom:-500px;position:absolute;width:1000px;z-index:9}@media only screen and (min-width:1024px){.ps_what--gradient{display:block}}.ps_what--screen{bottom:0;height:250px;overflow:hidden;position:absolute;right:52px;width:400px;z-index:999}@media only screen and (min-width:700px){.ps_what--screen{height:336px;right:69px;width:537px}}.ps_what--screen iframe{height:100%;width:100%}.ps_what--screen a{display:none}.ps_what--screen a:after{content:"";position:absolute;top:80px;left:50%;margin-left:-90px;background:url(/content/dam/pluralsight2/target/xplaybutton--icon_2x.png.pagespeed.ic._K2hnCGV80.png) 0 0;width:180px;height:180px;background-size:360px}@media only screen and (max-width:700px){.ps_what--screen a:after{top:35px}}@media only screen and (min-width:600px){.ps_what--screen a{display:block}}.ps_what--title{border-width:10px 0 10px 10px;border-style:solid;box-sizing:border-box;-webkit-border-image:-webkit-gradient(linear,0 0,0 100%,from(#f05a28),to(#e80a89)) 1 100%;-webkit-border-image:-webkit-linear-gradient(#f05a28,#e80a89) 1 100%;-moz-border-image:-moz-linear-gradient(#f05a28,#e80a89) 1 100%;-o-border-image:-o-linear-gradient(#f05a28,#e80a89) 1 100%;border-image:linear-gradient(to bottom,#f05a28,#e80a89) 1 100%;font-size:24px;font-weight:100;line-height:18px;margin-bottom:20px;padding-left:15px;padding-top:4px}@media only screen and (min-width:600px){.ps_what--title{font-size:36px;line-height:24px;white-space:nowrap}}.ps_btn.stroke{background:transparent;border:solid 1px #fff;color:#fff!important}.ps_btn.stroke:hover{border:solid 1px #ff7b39;color:#ff7b39!important}.ps_btn.stroke:hover span{border-left:11px solid #ff7b39}.ps_btn span{border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid #fff;font-size:0;height:0;line-height:0;margin-right:10px;position:relative;top:-4px;width:0}</style>
+<div class="ps_what">
+<div class="ps_what--container">
+<div class="ps_what--gradient"></div>
+<div class="ps_what--screen">
+<a href="https://www.youtube.com/embed/hXqlbavuZcY?autoplay=1&amp;hd=1&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;enablejsapi=1" class="fancybox fancybox.iframe" style="position:absolute;top:0;bottom:0;left:0;right:0;z-index:9;"></a>
+<div youtube-video-id="hXqlbavuZcY" id="ps_full" class="dtm-vid-track-off"></div>
+</div>
+<div class="ps_what--device"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/macbook_v2@2x.png" alt=""></div>
+<div class="ps_what--content">
+<div class="ps_what--title">What is Pluralsight?</div>
+<div class="ps_what--description">As your industry and business model evolve, you need a learning solution that helps you deliver key innovations on time and on budget. With our platform, you can evaluate the technical abilities of your teams, align learning to key business objectives and close skills gaps in critical areas like cloud, design, security, mobile and data.</div>
+<a href="https://www.youtube.com/embed/hXqlbavuZcY?autoplay=1&amp;hd=1&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;enablejsapi=1" class="ps_btn stroke fancybox fancybox.iframe"><span></span>See how it's done</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">window.psYtVideos=window.psYtVideos||{};psYtVideos.vidConfigs=psYtVideos.vidConfigs||[];var $bgVideos=jQuery('#ps_full');jQuery.each($bgVideos,function(key,value){var $videoDiv=jQuery(value),youtubeVideoId='hXqlbavuZcY',playerId="bgPlayer"+key;$videoDiv.attr('id',playerId);psYtVideos.vidConfigs.push({videoElId:playerId,videoSettings:{videoId:youtubeVideoId,playerVars:{autoplay:1,controls:0,showinfo:0,modestbranding:1,loop:1,playlist:youtubeVideoId,fs:0,cc_load_policy:0,iv_load_policy:3,autohide:1,rel:0},events:{'onReady':function(e){var player=e.target;player.mute();var intervalDuration=player.getDuration()*1000-1000;setInterval(function(){player.seekTo(0);},intervalDuration);},'onStateChange':function(event){runVideoTracking(event);}}}});});</script></div>
+</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="main parsys"><div class="free-form-component section">
+<style>.clear{clear:both}.ps_logos a,.ps_logos a:hover{border-radius:2px;border:solid 1px #222;padding:0 20px;font-size:12px!important;color:#222;margin:0 20px;position:relative;top:-5px;text-decoration:none}.ps_logos{background:#f2f2f2;clear:both;font-size:18px;font-weight:200;line-height:24px;padding:40px 10px 40px;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}.ps_logos img{width:100%}.ps_logos--title{font-size:24px;line-height:34px;font-weight:200;color:#555}@media only screen and (min-width:37.5em){.ps_logos{font-size:24px;line-height:32px}}.ps_logos a{display:block;font-size:16px;font-weight:400;padding:0 20px}@media only screen and (min-width:37.5em){.ps_logos a{display:inline-block}}.ps_logos--container{max-width:68.75rem;margin:0 auto;padding:10px 0}.ps_logos--block{float:left;width:25%}@media only screen and (min-width:37.5em){.ps_logos--block{width:25%}}@media only screen and (min-width:64em){.ps_logos--block{width:12.5%}}@media only screen and (max-width:37.5em){.ps_logos a{margin-top:30px}}</style>
+<div id="ps_logos--test">
+<div class="ps_logos">
+<div class="ps_logos--title">Helping thousands of organizations transform at scale.<a href="https://www.pluralsight.com/business"> Learn more</a></div>
+<div class="ps_logos--container">
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xadp,P403x.png.pagespeed.ic.B7lliBvqYD.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xvmware,P403x.png.pagespeed.ic.FIkHC3U2bQ.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xtableau,P403x.png.pagespeed.ic.RYtMvI1YDM.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xdisney,P403x.png.pagespeed.ic.QljV_RsmvP.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xatt,P403x.png.pagespeed.ic.mBbiJ_QuvT.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/business-logos/xcisco,P403x.png.pagespeed.ic.5hDAn9l_H-.png" alt=""/></div>
+<div class="ps_logos--block"><img src="/content/dam/pluralsight2/target/xgamestop2.png.pagespeed.ic.sF5LMSfAe2.png" alt=""/></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="free_form_component free-form-component">
+<style>.ps_cigar_banner{background:#0e0e0e;padding:10px;color:#fff;text-align:center}.ps_cigar_banner .ps_cigar_banner--title{color:#fff;font-size:16px;font-weight:500;display:inline-block;vertical-align:middle}.ps_cigar_banner .ps_btn{margin:10px;display:inline-block;vertical-align:middle}</style>
+<div class="ps_cigar_banner">
+<div class="row">
+<span class="ps_cigar_banner--title">Test your skills. Learn something new. Get help. Repeat.</span> <a class="ps_btn" href="https://billing.pluralsight.com/individual/checkout/account-details?sku=IND-Y-PLUS-FT">Start a FREE 10-Day Trial</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="main parsys"><div class="generic-modal section">
+<div id="contact-sales" class="main clearfix">
+<div class="clearfix"><div class="generic-block section">
+<div id="contact-sales_" class="hidden"></div>
+<div class="generic-block-wrapper  block block--black block--left block--middle   padding-top-twenty padding-bottom-twenty contact-sales clearfix">
+<div class="main clearfix">
+<div class="clearfix"><div class="column-control section"><div>
+<div class="container column-control-container ">
+<div class="row         ">
+<div class="medium-12 columns"><div class="title section">
+<div data-emptytext="Title">
+<h3>
+Contact sales
+</h3>
+</div></div>
+<div class="marketo-form section">
+<div class="marketo-form-component marketo-form--inline marketo-form--left  clearfix">
+<div class="marketo-form-data hidden">
+<span class="form-preset"> </span>
+<span class="form-id">2183</span>
+<a class="redirect-path">Redirect Link</a>
+<span class="download-path"></span>
+<span class="success-message">Thank you! Our team will be in touch shortly. </span>
+<span class="marketo-wid"></span>
+</div>
+<form id="marketoForm_2183" class="marketo-target"></form>
+<iframe id="marketo-file" style="display:none;"></iframe>
+</div>
+<script defer src="//app-sjqe.marketo.com/js/forms2/js/forms2.min.js"></script></div>
+<div class="free-form-component section">
+<style>.contact-sales button{background-color:#e82a89}.contact-sales button:hover{background-color:#cc1671}.contact-sales .mktoField{background:#222!important;border:solid 1px #555!important;color:#fff!important}.contact-sales{padding:45px 45px 5px 45px!important;position:relative;box-sizing:border-box}.contact-sales:before{content:'';position:absolute;width:100%;height:4px;background:linear-gradient(to left,#ff7b39,#e82a89);top:0;left:0}.contact-sales .ps_pilot_close_btn{position:absolute;top:-30px;right:-35px;width:40px;z-index:9999;cursor:pointer}</style>
+<img src="https://www.pluralsight.com/content/dam/pluralsight2/product/business_platform/ps_close_btn@2x.png" class="ps_pilot_close_btn"/>
+<script type="text/javascript">jQuery(document).on({click:function(e){e.preventDefault();jQuery('.fancybox-overlay').trigger("click");}},'.ps_pilot_close_btn');</script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<noindex><footer id="ftr">
+<div class="ftr-first-row ftr-row">
+<div class="ftr-container">
+<div class="ftr-logo-links">
+<a href="https://www.pluralsight.com/about"><span><img src="//www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png"></span>About</a>
+<a href="https://www.pluralsight.com/contact"><span><img src="//www.pluralsight.com/content/dam/pluralsight2/general/icons/light/contact-icon.png"></span>Contact</a>
+<a href="https://www.pluralsight.com/events"><span><img src="//www.pluralsight.com/content/dam/pluralsight2/general/icons/light/event-icon.png"></span>Events</a>
+</div>
+<div class="ftr-cat-links-wrapper">
+<div class="ftr-cat-links-col">
+<div class="ftr-dd">╲╱</div>
+<div class="ftr-cat-header">Solutions</div>
+<div class="ftr-cat-links">
+<a href="https://www.pluralsight.com/business">Business</a>
+<a href="https://www.pluralsight.com/learn">Individuals</a>
+<a href="https://www.pluralsight.com/small-business">Small business</a>
+<a href="https://www.pluralsight.com/academic">Academic</a>
+<a href="https://www.pluralsight.com/federal">Federal government</a>
+<a href="https://www.pluralsight.com/state-and-local">State & local government</a>
+<a href="https://www.pluralsight.com/kids-courses">Free courses for kids</a>
+</div>
+</div>
+<div class="ftr-cat-links-col">
+<div class="ftr-dd">╲╱</div>
+<div class="ftr-cat-header">Platform</div>
+<div class="ftr-cat-links">
+<a href="https://www.pluralsight.com/browse">Browse library</a>
+<a href="https://www.pluralsight.com/product/pluralsight-iq">Pluralsight IQ</a>
+<a href="https://www.pluralsight.com/product/iris">Iris</a>
+<a href="https://www.pluralsight.com/product/paths">Paths</a>
+<a href="https://www.pluralsight.com/product/mentoring">Mentoring</a>
+<a href="https://www.pluralsight.com/authors">Authors</a>
+<a href="https://www.pluralsight.com/downloads">Mobile apps</a>
+<a href="https://www.pluralsight.com/product/professional-services">Professional Services</a>
+</div>
+</div>
+<div class="ftr-cat-links-col">
+<div class="ftr-dd">╲╱</div>
+<div class="ftr-cat-header">Support</div>
+<div class="ftr-cat-links">
+<a href="http://help.pluralsight.com/help">Help center</a>
+<a href="http://help.pluralsight.com/help">Knowledge base</a>
+<a href="https://www.pluralsight.com/product/integrations">Integrations</a>
+<a href="https://www.pluralsight.com/content/dam/pluralsight/landing-pages/resource/tutorial/pluralsight-ip-whitelist.pdf">IP whitelist</a>
+</div>
+</div>
+<div class="ftr-cat-links-col">
+<div class="ftr-dd">╲╱</div>
+<div class="ftr-cat-header">Company</div>
+<div class="ftr-cat-links">
+<a href="https://www.pluralsight.com/partners">Partners</a>
+<a href="https://www.pluralsightone.org">PluralsightOne.org</a>
+<a href="https://www.pluralsight.com/customer-stories">Customer stories</a>
+<a href="https://www.pluralsight.com/careers">Careers</a>
+<a href="https://www.pluralsight.com/teach">Teach</a>
+<a href="https://www.pluralsight.com/thehub">Blog</a>
+<a href="https://www.pluralsight.com/newsroom">Newsroom</a>
+<a href="https://www.pluralsight.com/tech-blog">Pluralsight engineering</a>
+<a href="https://www.pluralsight.com/affiliate">Affiliate program</a>
+<a href="https://www.pluralsight.com/subscribe">Subscribe</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ftr-second-row ftr-row">
+<div class="ftr-container">
+<div class="ftr-social-icons">
+<a href="https://www.facebook.com/pluralsight" class="share__link face-icon" target="_blank" alt="Like"></a>
+<a href="http://www.instagram.com/pluralsight" class="share__link insta-icon" target="_blank" alt="Like"></a>
+<a href="https://www.twitter.com/pluralsight" class="share__link tweet-icon" target="_blank" alt="Like"></a>
+<a href="https://www.linkedin.com/company/pluralsight" class="share__link linkedin-icon" target="_blank" alt="Like"></a>
+<a href="https://plus.google.com/+pluralsight" class="share__link goog-icon" target="_blank" alt="Like"></a>
+<a href="https://www.youtube.com/user/pluralsight" class="share__link youtube-icon" target="_blank" alt="Like"></a>
+</div>
+</div>
+</div>
+<div class="ftr-third-row ftr-row">
+<div class="ftr-container">
+<div class="ftr-terms"><a href="https://www.pluralsight.com/sitemap.xml">Site Map</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://www.pluralsight.com/terms">Terms of Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://www.pluralsight.com/privacy">Privacy Policy</a></div>
+<div class="ftr-copyright">Copyright &copy; 2004 - 2017 Pluralsight LLC. All rights reserved</div>
+</div>
+</div>
+<div class="ftr-fourth-row ftr-row"></div>
+</footer></noindex>
+<script type="text/javascript" src="/etc/clientlibs/pluralsight/uber.min.edc829372b7d7120f543bb2fe8e9f010.js" defer></script>
+<!--adobe dtm page end call-->
+<script type="text/javascript">if(typeof(_satellite)!="undefined"){_satellite.pageBottom();}</script>
+<!--load full demandbase tools-->
+<script type="text/javascript">loadRemoteScript('scripts.demandbase.com/LrYAV7hU.min.js','text/javascript',1,'demandbase_js_secondary_libs',function(){window.dbReady=true;var newEvent=new CustomEvent("PS.dbReady",{bubbles:true,cancelable:false});document.querySelector('body').dispatchEvent(newEvent);});</script>
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6966154/7885752/css/fonts.css"/>
+</div>
+</div>
+<noscript class="psa_add_styles"><link rel="stylesheet" href="/etc/clientlibs/pluralsight/A.uber.min.499daf7dc4a4ac662cb4c0448fc4b24b.css.pagespeed.cf.Bu5xCI4M0O.css" type="text/css"><style>.skills_iq--hero:hover{color:#fff;text-decoration:none}.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 200px;color:#fff;display:block;text-decoration:none;height:500px;position:relative}@media only screen and (min-width:600px){.skills_iq--hero{height:600px}}.skills_iq--branding{margin:0 auto;max-width:365px}.skills_iq--content{box-sizing:border-box;left:50%;padding:20px;position:absolute;text-align:center;top:50%;width:100%;transform:translate(-50%,-55%)}.skills_iq--title{font-size:40px;font-weight:900;letter-spacing:.15em;line-height:48px;padding:16px 0;text-transform:uppercase}.skills_iq--banner:hover,.skills_iq--banner{background:#fff;box-sizing:border-box;color:#ee2a7b;font-size:14px;font-weight:900;height:60px;line-height:20px;left:0;letter-spacing:.15em;padding:12px 10px;position:absolute;right:0;text-align:center;text-transform:uppercase;top:0;text-decoration:none}.skills_iq--playbutton{display:block;margin:0 auto;max-width:80px}.skills_iq--button{background:#fff;border:solid 1px #fff;border-radius:2px;color:#000;display:inline-block;font-size:18px;font-weight:500;line-height:48px;margin:10px 5px;padding:0 40px;position:relative}.skills_iq--button:hover{color:#000;text-decoration:none}.skills_iq--button.stroke{background:transparent;color:#fff;padding:0 40px 0 55px}.skills_iq--button.stroke{color:#fff;text-decoration:none}.skills_iq--body{display:block;height:600px}.skills_iq--body,.skills_iq--body:hover{color:#fff;text-decoration:none}@media only screen and (min-width:600px){.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 400px}.skills_iq--banner:hover,.skills_iq--banner{font-size:16px;line-height:20px}.skills_iq--title{font-size:48px;line-height:60px;padding:48px 0}.skills_iq--playbutton{max-width:80px}}@media only screen and (min-width:1000px){.skills_iq--hero{background:#141414 url(https://www.pluralsight.com/content/dam/pluralsight2/product/skilliq/skills_iq--background@2x.jpg) repeat-x bottom center;background-size:auto 600px}.skills_iq--banner:hover,.skills_iq--banner{font-size:20px;line-height:36px}.skills_iq--title{font-size:60px;line-height:60px;padding:60px 0}.skills_iq--playbutton{max-width:100px}}</style><style>.ps_what{color:#fff;overflow:hidden;background:#222}.ps_what--container{margin:0 auto;max-width:1400px;padding:20px 0 40px 0;position:relative}.ps_what--container:after{clear:both;content:"";display:block}.ps_what--content{box-sizing:border-box;height:700px;max-width:700px;padding:20px 30px;position:relative;z-index:9}@media only screen and (min-width:600px){.ps_what--content{height:780px;padding:40px 50px}}@media only screen and (min-width:1025px){.ps_what--content{height:auto;padding:60px 0 50px 90px;margin-right:670px}}.ps_what--device{bottom:0;position:absolute;right:0;width:500px;z-index:99}@media only screen and (min-width:700px){.ps_what--device{width:670px}}.ps_what--description{color:#ddd;font-size:14px;font-weight:200;line-height:24px;margin-bottom:40px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}@media only screen and (min-width:600px){.ps_what--description{font-size:18px;line-height:28px}}.ps_what--gradient{background:-moz-radial-gradient(center,ellipse cover,#565656 0%,rgba(86,86,86,0) 50%);background:-webkit-radial-gradient(center,ellipse cover,#565656 0%,rgba(86,86,86,0) 50%);background:radial-gradient(ellipse at center,#565656 0%,rgba(86,86,86,0) 50%);display:none;height:1000px;right:-40px;bottom:-500px;position:absolute;width:1000px;z-index:9}@media only screen and (min-width:1024px){.ps_what--gradient{display:block}}.ps_what--screen{bottom:0;height:250px;overflow:hidden;position:absolute;right:52px;width:400px;z-index:999}@media only screen and (min-width:700px){.ps_what--screen{height:336px;right:69px;width:537px}}.ps_what--screen iframe{height:100%;width:100%}.ps_what--screen a{display:none}.ps_what--screen a:after{content:"";position:absolute;top:80px;left:50%;margin-left:-90px;background:url(/content/dam/pluralsight2/target/xplaybutton--icon_2x.png.pagespeed.ic._K2hnCGV80.png) 0 0;width:180px;height:180px;background-size:360px}@media only screen and (max-width:700px){.ps_what--screen a:after{top:35px}}@media only screen and (min-width:600px){.ps_what--screen a{display:block}}.ps_what--title{border-width:10px 0 10px 10px;border-style:solid;box-sizing:border-box;-webkit-border-image:-webkit-gradient(linear,0 0,0 100%,from(#f05a28),to(#e80a89)) 1 100%;-webkit-border-image:-webkit-linear-gradient(#f05a28,#e80a89) 1 100%;-moz-border-image:-moz-linear-gradient(#f05a28,#e80a89) 1 100%;-o-border-image:-o-linear-gradient(#f05a28,#e80a89) 1 100%;border-image:linear-gradient(to bottom,#f05a28,#e80a89) 1 100%;font-size:24px;font-weight:100;line-height:18px;margin-bottom:20px;padding-left:15px;padding-top:4px}@media only screen and (min-width:600px){.ps_what--title{font-size:36px;line-height:24px;white-space:nowrap}}.ps_btn.stroke,.stroke.ps_btn-sm,.stroke.ps_btn-lg{background:transparent;border:solid 1px #fff;color:#fff!important}.ps_btn.stroke:hover,.stroke.ps_btn-sm:hover,.stroke.ps_btn-lg:hover{border:solid 1px #ff7b39;color:#ff7b39!important}.ps_btn.stroke:hover span,.stroke.ps_btn-sm:hover span,.stroke.ps_btn-lg:hover span{border-left:11px solid #ff7b39}.ps_btn span,.ps_btn-sm span,.ps_btn-lg span{border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid #fff;font-size:0;height:0;line-height:0;margin-right:10px;position:relative;top:-4px;width:0}</style><style>.clear{clear:both}.ps_logos a,.ps_logos a:hover{border-radius:2px;border:solid 1px #222;padding:0 20px;font-size:12px!important;color:#222;margin:0 20px;position:relative;top:-5px;text-decoration:none}.ps_logos{background:#f2f2f2;clear:both;font-size:18px;font-weight:200;line-height:24px;padding:40px 10px 40px;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}.ps_logos img{width:100%}.ps_logos--title{font-size:24px;line-height:34px;font-weight:200;color:#555}@media only screen and (min-width:37.5em){.ps_logos{font-size:24px;line-height:32px}}.ps_logos a{display:block;font-size:16px;font-weight:400;padding:0 20px}@media only screen and (min-width:37.5em){.ps_logos a{display:inline-block}* html .ps_logos a{display:inline}*+html .ps_logos a{display:inline}}.ps_logos--container{max-width:68.75rem;margin:0 auto;padding:10px 0}.ps_logos--block{float:left;width:25%}@media only screen and (min-width:37.5em){.ps_logos--block{width:25%}}@media only screen and (min-width:64em){.ps_logos--block{width:12.5%}}@media only screen and (max-width:37.5em){.ps_logos a{margin-top:30px}}</style><style>.ps_cigar_banner{background:#0e0e0e;padding:10px;color:#fff;text-align:center}.ps_cigar_banner .ps_cigar_banner--title{color:#fff;font-size:16px;font-weight:500;display:inline-block;vertical-align:middle}.ps_cigar_banner .ps_btn{margin:10px;display:inline-block;vertical-align:middle}</style><style>.contact-sales button{background-color:#e82a89}.contact-sales button:hover{background-color:#cc1671}.contact-sales .mktoField{background:#222!important;border:solid 1px #555!important;color:#fff!important}.contact-sales .mktoHtmlText{color:gray}.contact-sales .mktoHtmlText a{color:#e82a89}.contact-sales .title--white{font-size:21px;font-weight:500;color:#ccc;margin-bottom:25px}.contact-sales{padding:45px 45px 5px 45px!important;position:relative;box-sizing:border-box}.contact-sales:before{content:'';position:absolute;width:100%;height:4px;background:linear-gradient(to left,#ff7b39,#e82a89);top:0;left:0}.contact-sales .ps_pilot_close_btn{position:absolute;top:-30px;right:-35px;width:40px;z-index:9999;cursor:pointer}</style><link rel="stylesheet" type="text/css" href="//cloud.typography.com/6966154/7885752/css/fonts.css"/></noscript><script data-pagespeed-no-defer>//<![CDATA[
+(function(){function b(){var a=window,c=e;if(a.addEventListener)a.addEventListener("load",c,!1);else if(a.attachEvent)a.attachEvent("onload",c);else{var d=a.onload;a.onload=function(){c.call(this);d&&d.call(this)}}};var f=!1;function e(){if(!f){f=!0;for(var a=document.getElementsByClassName("psa_add_styles"),c=0,d;d=a[c];++c)if("NOSCRIPT"==d.nodeName){var k=document.createElement("div");k.innerHTML=d.textContent;document.body.appendChild(k)}}}function g(){var a=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||null;a?a(function(){window.setTimeout(e,0)}):b()}
+var h=["pagespeed","CriticalCssLoader","Run"],l=this;h[0]in l||!l.execScript||l.execScript("var "+h[0]);for(var m;h.length&&(m=h.shift());)h.length||void 0===g?l[m]?l=l[m]:l=l[m]={}:l[m]=g;})();
+pagespeed.CriticalCssLoader.Run();
+//]]></script></body>
+</html>
